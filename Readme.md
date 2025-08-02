@@ -40,8 +40,10 @@ https://github.com/Unakar/Logic-RL/tree/main/data/kk/instruct
 | Qwen2.5-7B-Instruct-GRPO  | 0.86 | 0.77 | 0.81 | 0.75 | 0.63 | 0.49 | 0.54 |
 
 ## Training curves:
+### train_curves_of_qwen2.5_3B_instruct
 ![train_curves_of_qwen2.5_3b_instruct_on_logic](/assets/images/train_curves_of_qwen2.5_3b_instruct_on_logic.png)
 
+### train_curves_of_qwen2.5_7B_instruct
 ![train_curves_of_qwen2.5_7b_instruct_on_logic](/assets/images/train_curves_of_qwen2.5_7b_instruct_on_logic.png)
 
 # TODO
