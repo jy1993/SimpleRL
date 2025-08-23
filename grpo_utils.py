@@ -19,8 +19,8 @@ class GRPOBuffer(object):
 		self.args = args
 		self.reset()
 
-	def add_for_mm(self, group_token_ids, group_attention_mask, group_position_ids, pixel_values, image_grid_thw, 
-			group_old_logps, group_ref_logps, group_response, gold_label, prompt_len, finished_list):
+	def add_for_mm(self, group_token_ids, group_attention_mask, group_images, 
+			group_old_logps, group_ref_logps, group_response, gold_label, logits_to_keep, finished_list):
 		advs, rewards, answers = self.cal_advs(group_response, gold_label)
 		# if self.args.completition_keep_ratio > 0:
 		# 	sorted_abs_advs = sorted([abs(adv) for adv in advs])
@@ -37,17 +37,16 @@ class GRPOBuffer(object):
 		# 		self.all_advs.append(adv)
 		# 		cnt += 1
 		# assert cnt == int(len(advs) * self.args.completition_keep_ratio)
-		for token_ids, attention_mask, position_ids, old_logps, ref_logps, adv in zip(group_token_ids, group_attention_mask, group_position_ids, group_old_logps, group_ref_logps, advs):
-			self.all_token_ids.append(token_ids)
-			self.all_attention_mask.append(attention_mask)
-			self.all_position_ids.append(position_ids)
-			self.all_old_logps.append(old_logps)
-			self.all_ref_logps.append(ref_logps)
-			self.all_advs.append(adv)
-			self.response_len_dist.append(sum(attention_mask[prompt_len:]).item())
-			self.prompt_len_dist.append(sum(attention_mask[:prompt_len]).item())
-		self.all_pixel_values.append(pixel_values)
-		self.all_image_grid_thw.append(image_grid_thw)
+		self.all_token_ids += group_token_ids
+		self.all_attention_mask += group_attention_mask
+		self.all_images += group_images
+		self.all_old_logps += group_old_logps
+		self.all_ref_logps += group_ref_logps
+		self.all_advs += advs
+		for attention_mask in group_attention_mask:
+			if sum(attention_mask) > 0:
+				self.prompt_len_dist.append(sum(attention_mask[:-logits_to_keep]))
+				self.response_len_dist.append(sum(attention_mask[-logits_to_keep:]))
 		self.finished_list += finished_list
 		if all([r >= 1 for r in rewards]):
 			self.all_correct_group_cnt += 1
@@ -67,8 +66,9 @@ class GRPOBuffer(object):
 		self.all_ref_logps += group_ref_logps
 		self.all_advs += advs
 		for attention_mask in group_attention_mask:
-			self.response_len_dist.append(sum(attention_mask[-logits_to_keep:]))
-			self.prompt_len_dist.append(sum(attention_mask[:-logits_to_keep]))
+			if sum(attention_mask) > 0:
+				self.prompt_len_dist.append(sum(attention_mask[:-logits_to_keep]))
+				self.response_len_dist.append(sum(attention_mask[-logits_to_keep:]))
 		self.finished_list += finished_list
 		if all([r >= 1 for r in rewards]):
 			self.all_correct_group_cnt += 1
@@ -95,8 +95,7 @@ class GRPOBuffer(object):
 		self.all_token_ids = []
 		self.all_attention_mask = []
 		self.all_position_ids = []
-		self.all_pixel_values = []
-		self.all_image_grid_thw = []
+		self.all_images = []
 		self.all_old_logps = []
 		self.all_ref_logps = []
 		self.all_advs = []
@@ -172,6 +171,8 @@ class GRPOBuffer(object):
 		self.all_old_logps = self.random_shuffle(self.all_old_logps, ids)
 		self.all_ref_logps = self.random_shuffle(self.all_ref_logps, ids)
 		self.all_advs = self.random_shuffle(self.all_advs, ids)
+		if len(self.all_images) > 0:
+			self.all_images = self.random_shuffle(self.all_images, ids)
 
 	def get_all_batches(self, batch_size):
 		self.shuffle()
@@ -182,19 +183,18 @@ class GRPOBuffer(object):
 		# TODO, fix this
 		# assert batch_size == self.args.group_size
 		assert len(self.all_token_ids) == len(self.all_attention_mask) == len(self.all_old_logps) == len(self.all_ref_logps) == len(self.all_advs)
-		if self.args.task_type == 'geometry':
+		if self.args.task_type == 'vl_math':
 			for i in range(len(self.all_token_ids) // batch_size):
-				group_idx = i
-				all_batches.append((
-					torch.stack(self.all_token_ids[i*batch_size:i*batch_size+batch_size], dim=0), 
-					torch.stack(self.all_attention_mask[i*batch_size:i*batch_size+batch_size], dim=0), 
-					torch.stack(self.all_position_ids[i*batch_size:i*batch_size+batch_size], dim=0),
-					self.all_pixel_values[group_idx].repeat_interleave(batch_size, dim=0),
-					self.all_image_grid_thw[group_idx].repeat_interleave(batch_size, dim=0),
-					torch.stack(self.all_old_logps[i*batch_size:i*batch_size+batch_size], dim=0),
-					torch.stack(self.all_ref_logps[i*batch_size:i*batch_size+batch_size], dim=0),
-					torch.stack(self.all_advs[i*batch_size:i*batch_size+batch_size], dim=0)
-					))
+				all_batches.append({
+					'tensor_batch': (
+						torch.LongTensor(self.all_token_ids[i*batch_size:i*batch_size+batch_size]), 
+						torch.LongTensor(self.all_attention_mask[i*batch_size:i*batch_size+batch_size]), 
+						torch.FloatTensor(self.all_old_logps[i*batch_size:i*batch_size+batch_size]),
+						torch.FloatTensor(self.all_ref_logps[i*batch_size:i*batch_size+batch_size]),
+						torch.FloatTensor(self.all_advs[i*batch_size:i*batch_size+batch_size])
+						),
+					'non_tensor_batch': {'images': self.all_images[i*batch_size:i*batch_size+batch_size]}
+					})
 		else:
 			for i in range(len(self.all_token_ids) // batch_size):
 				all_batches.append((
@@ -204,6 +204,41 @@ class GRPOBuffer(object):
 					torch.FloatTensor(self.all_ref_logps[i*batch_size:i*batch_size+batch_size]),
 					torch.FloatTensor(self.all_advs[i*batch_size:i*batch_size+batch_size])
 					))
+		return all_batches
+
+	def get_all_batches_v2(self, batch_size):
+		self.shuffle()
+		all_batches = []
+		# if self.args.local_rank < 1:
+		# 	print(len(self.all_token_ids), batch_size)
+		# 	print(len(self.all_pixel_values), len(self.all_image_grid_thw))
+		# TODO, fix this
+		# assert batch_size == self.args.group_size
+		assert len(self.all_token_ids) == len(self.all_attention_mask) == len(self.all_old_logps) == len(self.all_ref_logps) == len(self.all_advs)
+		if self.args.task_type == 'vl_math':
+			for i in range(len(self.all_token_ids) // batch_size):
+				all_batches.append({
+					'tensor_batch': (
+						torch.LongTensor(self.all_token_ids[i*batch_size:i*batch_size+batch_size]), 
+						torch.LongTensor(self.all_attention_mask[i*batch_size:i*batch_size+batch_size]), 
+						torch.FloatTensor(self.all_old_logps[i*batch_size:i*batch_size+batch_size]),
+						torch.FloatTensor(self.all_ref_logps[i*batch_size:i*batch_size+batch_size]),
+						torch.FloatTensor(self.all_advs[i*batch_size:i*batch_size+batch_size])
+						),
+					'non_tensor_batch': {'images': self.all_images[i*batch_size:i*batch_size+batch_size]}
+					})
+		else:
+			for i in range(len(self.all_token_ids) // batch_size):
+				all_batches.append({
+					'tensor_batch':(
+						torch.LongTensor(self.all_token_ids[i*batch_size:i*batch_size+batch_size]), 
+						torch.LongTensor(self.all_attention_mask[i*batch_size:i*batch_size+batch_size]), 
+						torch.FloatTensor(self.all_old_logps[i*batch_size:i*batch_size+batch_size]),
+						torch.FloatTensor(self.all_ref_logps[i*batch_size:i*batch_size+batch_size]),
+						torch.FloatTensor(self.all_advs[i*batch_size:i*batch_size+batch_size])
+						),
+					'non_tensor_batch': {'images': None}
+					})
 		return all_batches
 
 	def cal_rewards_for_logic(self, response, gold_label):
@@ -244,11 +279,9 @@ class GRPOBuffer(object):
 		for r in group_response:
 			if self.args.task_type == 'logic':
 				reward, correct = self.cal_rewards_for_logic(r, gold_label)
-			elif self.args.task_type == 'k12':
+			elif self.args.task_type == 'vl_math':
 				reward, correct = self.cal_rewards_for_math(r, gold_label)
-			elif self.args.task_type == 'geometry':
-				reward, correct = self.cal_rewards_for_math(r, gold_label)
-			elif self.args.task_type == 'math12k':
+			elif self.args.task_type == 'math':
 				reward, correct = self.cal_rewards_for_math(r, gold_label)
 			rewards.append(reward)
 			all_correct.append(correct)
@@ -293,7 +326,7 @@ def get_ratio_stat(args, ratio, loss_mask):
 def caculate_grpo_loss(args, logps, old_logps, ref_logps, advs, loss_mask):
 	advs = advs.unsqueeze(-1)
 	if args.algo == 'stable_reinforce':
-		log_diff = torch.clamp(logps - old_logps, np.log(1e-3), np.log(1e3))
+		logp_diff = torch.clamp(logps - old_logps, np.log(1e-3), np.log(1e3))
 	else:
 		logp_diff = torch.clamp(logps - old_logps, -20, 20)
 	ratio = torch.exp(logp_diff)
@@ -343,7 +376,7 @@ def caculate_gspo_loss(args, logps, old_logps, ref_logps, advs, loss_mask):
 	kl_loss = torch.exp(kl) - kl - 1
 	kl_loss = torch.clamp(kl_loss, -10, 10)
 	kl_loss = (kl_loss * loss_mask).sum() / (loss_mask.sum() + 1e-6)
-	clipped_ratio = get_ratio_stat(args, ratio, loss_mask)
+	clipped_ratio = get_ratio_stat(args, avg_ratio, loss_mask)
 	metrics = {
 		'policy_loss': policy_loss, 
 		'kl_loss': kl_loss, 
@@ -394,7 +427,7 @@ def check_update(args, logps, logps_after_update, advs, loss_mask):
 # 	return policy_loss + args.kl_coeff * kl_loss, policy_loss, kl_loss
 
 def caculate_grpo_loss_kl_cov(args, logps, old_logps, ref_logps, advs, loss_mask):
-	advs = advs.unsqueeze(-1)
+	advs = advs.unsqueeze(-1).repeat(1, logps.shape[1])
 	# ratio = torch.exp(logps - logps.detach())
 	ratio = torch.exp(torch.clamp(logps - old_logps, -20, 20))
 	# clip = torch.max(- advs * ratio, - advs * torch.clamp(ratio, 1 - clip_range, 1 + clip_range))
@@ -405,7 +438,7 @@ def caculate_grpo_loss_kl_cov(args, logps, old_logps, ref_logps, advs, loss_mask
 	all_valid_idx = torch.nonzero(all_valid.reshape(-1), as_tuple=True)[0] 
 	all_valid_adv = advs[all_valid].detach().reshape(-1).cpu()
 	all_valid_logp = logps[all_valid].detach().reshape(-1).cpu()
-	k_percent = 0.2
+	k_percent = args.k_percent
 	k = min(k_percent, len(all_valid_adv))
 	if k != 0:
 		cov_lst_all = (all_valid_adv - all_valid_adv.mean()) * (all_valid_logp - all_valid_logp.mean())
@@ -414,7 +447,7 @@ def caculate_grpo_loss_kl_cov(args, logps, old_logps, ref_logps, advs, loss_mask
 		
 		if len(large_cov_idxs) != 0:
 			large_cov_idxs = all_valid_idx[large_cov_idxs]
-			pg_losses[large_cov_idxs // adbs.shape[1], large_cov_idxs % advs.shape[1]] = pg_losses_kl[large_cov_idxs // advantages.shape[1], large_cov_idxs % advantages.shape[1]]
+			pg_losses[large_cov_idxs // advs.shape[1], large_cov_idxs % advs.shape[1]] = pg_losses_kl[large_cov_idxs // advs.shape[1], large_cov_idxs % advs.shape[1]]
 	policy_loss = (pg_losses * loss_mask).sum() / (loss_mask.sum() + 1e-6)
 	clipped_ratio = get_ratio_stat(args, ratio, loss_mask)
 	metrics = {
@@ -525,15 +558,15 @@ class ColocateWorkerExtension:
 			# print(name, tensor.shape)
 		# print(self.model_runner.model)
 		# weight_names = [w[0] for w in weights]
-		print('*****start-of-update-weights*****')
+		# print('*****start-of-update-weights*****')
 		# for name, p in self.model_runner.model.named_parameters():
 		# 	if name not in weight_names:
 		# 		print(name)
 		self.model_runner.model.load_weights(weights=weights)
 		torch.cuda.synchronize()
-		for name, p in self.model_runner.model.named_parameters():
-			print(name, p[0])
-		print('*****end-of-update-weights*****')
+		# for name, p in self.model_runner.model.named_parameters():
+		# 	print(name, p[0])
+		# print('*****end-of-update-weights*****')
 
 	def check_weights_changed(self, ipc_handles):
 		"""

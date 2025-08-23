@@ -109,17 +109,44 @@ def get_train_ds_config(offload,
 	}
 
 def NEFTune(model, noise_alpha=5):
-    def noised_embed(orig_embed, noise_alpha):
-        def new_func(x):
-            # during training, we add noise to the embedding
-            # during generation, we don't add noise to the embedding
-            if model.training:
-                embed_init = orig_embed(x)
-                dims = torch.tensor(embed_init.size(1) * embed_init.size(2))
-                mag_norm = noise_alpha/torch.sqrt(dims)
-                return embed_init + torch.zeros_like(embed_init).uniform_(-mag_norm, mag_norm)
-            else:
-                return orig_embed(x)
-        return new_func
-    model.model.embed_tokens.forward = noised_embed(model.model.embed_tokens, noise_alpha)
-    return model
+	def noised_embed(orig_embed, noise_alpha):
+		def new_func(x):
+			# during training, we add noise to the embedding
+			# during generation, we don't add noise to the embedding
+			if model.training:
+				embed_init = orig_embed(x)
+				dims = torch.tensor(embed_init.size(1) * embed_init.size(2))
+				mag_norm = noise_alpha/torch.sqrt(dims)
+				return embed_init + torch.zeros_like(embed_init).uniform_(-mag_norm, mag_norm)
+			else:
+				return orig_embed(x)
+		return new_func
+	model.model.embed_tokens.forward = noised_embed(model.model.embed_tokens, noise_alpha)
+	return model
+
+def get_all_reduce_mean(tensor):
+	torch.distributed.all_reduce(tensor, op=torch.distributed.ReduceOp.SUM)
+	tensor = tensor / torch.distributed.get_world_size()
+	return tensor
+
+def get_all_reduce_max(tensor):
+	torch.distributed.all_reduce(tensor, op=torch.distributed.ReduceOp.MAX)
+	return tensor
+
+def get_all_reduce_min(tensor):
+	torch.distributed.all_reduce(tensor, op=torch.distributed.ReduceOp.MIN)
+	return tensor
+
+@torch.no_grad()
+def gather_object(object):
+	torch.distributed.barrier()
+	output_objects = [None for _ in range(torch.distributed.get_world_size())]
+	torch.distributed.all_gather_object(output_objects, object)
+	# all_gather_object returns a list of lists, so we need to flatten it
+	return [x for y in output_objects for x in y]
+
+@torch.no_grad()
+def broadcast_object_list(object_list, src=0):
+	torch.distributed.barrier()
+	torch.distributed.broadcast_object_list(object_list, src=src)
+	return object_list

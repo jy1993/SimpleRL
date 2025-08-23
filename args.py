@@ -41,11 +41,14 @@ def get_grpo_args():
 	parser.add_argument('--kl_coeff', type=float, default=0.04)
 	parser.add_argument('--algo', type=str, default='grpo', choices=['grpo', 'gspo', 'dr_grpo', 'kl_conv', 'stable_reinforce'])
 	parser.add_argument('--completition_keep_ratio', type=float, default=0.25)
+	parser.add_argument('--k_percent', type=float, default=0.2)
 	# vllm
 	parser.add_argument('--ngpus_for_vllm', type=int, default=1)
+	parser.add_argument('--eval_only', action='store_true')
 	# playout
-	parser.add_argument('--per_device_playout_batch_size', type=int, default=4)
+	# parser.add_argument('--per_device_playout_batch_size', type=int, default=4)
 	parser.add_argument('--per_device_rollout_batch_size', type=int, default=4)
+	parser.add_argument('--mini_batch_size', type=int, default=8)
 	parser.add_argument('--max_new_tokens', type=int, default=2048)
 	parser.add_argument('--temperature', type=float, default=1)
 	parser.add_argument('--topp', type=float, default=0.99)

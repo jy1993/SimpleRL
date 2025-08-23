@@ -2,6 +2,7 @@ import json
 import sys
 import re
 from PIL import Image
+import math
 # from mathruler.grader import extract_boxed_content, grade_answer
 
 def to_jsonl(data, fout):
