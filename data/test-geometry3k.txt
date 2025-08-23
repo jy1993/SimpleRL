@@ -1,0 +1,601 @@
+{"image": "data/geometry3k-images/test_0.png", "query": "Chords $\\overline{A C}$ and $\\overline{D F}$ are equidistant from the center. If the radius of $\\odot G$ is 26 find $A C$", "answer": "48", "origin_answer": "48"}
+{"image": "data/geometry3k-images/test_1.png", "query": "Find the length of $\\widehat {ZY}$. Round to the nearest hundredth.", "answer": "7.85", "origin_answer": "7.85"}
+{"image": "data/geometry3k-images/test_2.png", "query": "Find the area of the figure to the nearest tenth.", "answer": "31.1", "origin_answer": "31.1"}
+{"image": "data/geometry3k-images/test_3.png", "query": "If pentagons $A B C D E$ and $P Q R S T$ are similar, find $S R$", "answer": "44/11", "origin_answer": "4 \\frac { 4 } { 11 }"}
+{"image": "data/geometry3k-images/test_4.png", "query": "In $\\triangle PQR$, $\\overline{ST} \\| \\overline{R Q}$ . If  $PS=12.5$, $SR=5$, and $PT=15$, find $TQ$.", "answer": "6", "origin_answer": "6"}
+{"image": "data/geometry3k-images/test_5.png", "query": "$a=14, b=48,$ and $c=50$ find $cosA$", "answer": "0.96", "origin_answer": "0.96"}
+{"image": "data/geometry3k-images/test_6.png", "query": "$\\overline{A C}$ is a diagonal of rhombus $A B C D$ If $m \\angle C D E$ is $116,$ what is $m \\angle A C D ?$", "answer": "58", "origin_answer": "58"}
+{"image": "data/geometry3k-images/test_7.png", "query": "Use parallelogram $JKLM$ to find $m \\angle KLM$", "answer": "71", "origin_answer": "71"}
+{"image": "data/geometry3k-images/test_8.png", "query": "Find the perimeter of the parallelogram.", "answer": "78", "origin_answer": "78"}
+{"image": "data/geometry3k-images/test_9.png", "query": "Find x.", "answer": "5*(3**0.5)", "origin_answer": "5 \\sqrt { 3 }"}
+{"image": "data/geometry3k-images/test_10.png", "query": "Find $PS$.", "answer": "9", "origin_answer": "9"}
+{"image": "data/geometry3k-images/test_11.png", "query": "In the figure, $m∠1 = 50$ and $m∠3 = 60$. Find the measure of $\\angle 8$.", "answer": "120", "origin_answer": "120"}
+{"image": "data/geometry3k-images/test_12.png", "query": "Find x", "answer": "4", "origin_answer": "4"}
+{"image": "data/geometry3k-images/test_13.png", "query": "Quadrilateral $ABDC$ is a rectangle. If $m\\angle1 = 38$, find $m \\angle 2$", "answer": "52", "origin_answer": "52"}
+{"image": "data/geometry3k-images/test_14.png", "query": "What is the value of $x$ below to the nearest tenth?", "answer": "22.5", "origin_answer": "22.5"}
+{"image": "data/geometry3k-images/test_15.png", "query": "Find $m\\angle W$", "answer": "108", "origin_answer": "108"}
+{"image": "data/geometry3k-images/test_16.png", "query": "Express the ratio of $\\cos B$ as a decimal to the nearest hundredth.", "answer": "0.38", "origin_answer": "0.38"}
+{"image": "data/geometry3k-images/test_17.png", "query": "Find the measure of $JK$.", "answer": "31", "origin_answer": "31"}
+{"image": "data/geometry3k-images/test_18.png", "query": "For trapezoid $T R S V, M$ and $N$ are midpoints of the legs. If $T R=32$ and $M N=25,$ find $V S$", "answer": "18", "origin_answer": "18"}
+{"image": "data/geometry3k-images/test_19.png", "query": "Find $x$ so that each quadrilateral is a parallelogram.", "answer": "4", "origin_answer": "4"}
+{"image": "data/geometry3k-images/test_20.png", "query": "Find $WR$.", "answer": "8", "origin_answer": "8"}
+{"image": "data/geometry3k-images/test_21.png", "query": "Find the value of $x$", "answer": "74", "origin_answer": "74"}
+{"image": "data/geometry3k-images/test_22.png", "query": "Find the area of the trapezoid.", "answer": "678.5", "origin_answer": "678.5"}
+{"image": "data/geometry3k-images/test_23.png", "query": "The diameters of $\\odot A, \\odot B,$ and $\\odot C$ are 10, 30 and 10 units, respectively. Find ZX if $\\overline{A Z} \\cong \\overline{C W}$ and $C W=2$.", "answer": "3", "origin_answer": "3"}
+{"image": "data/geometry3k-images/test_24.png", "query": "Find x", "answer": "6*(6**0.5)", "origin_answer": "6 \\sqrt { 6 }"}
+{"image": "data/geometry3k-images/test_25.png", "query": "Find x. Round to the nearest tenth.", "answer": "52.5", "origin_answer": "52.5"}
+{"image": "data/geometry3k-images/test_26.png", "query": "Find $y$ so that each quadrilateral is a parallelogram.", "answer": "31", "origin_answer": "31"}
+{"image": "data/geometry3k-images/test_27.png", "query": "Find $K J$ if $G J=8, G H=12,$ and $H I=4$", "answer": "2", "origin_answer": "2"}
+{"image": "data/geometry3k-images/test_28.png", "query": "Find $QP$.", "answer": "3.6", "origin_answer": "3.6"}
+{"image": "data/geometry3k-images/test_29.png", "query": "In $\\odot T, Z V=1,$ and $T W=13$. Find XY", "answer": "10", "origin_answer": "10"}
+{"image": "data/geometry3k-images/test_30.png", "query": "In the figure, $m∠11 = 62$ and $m∠14 = 38$. Find the measure of $\\angle 1$.", "answer": "38", "origin_answer": "38"}
+{"image": "data/geometry3k-images/test_31.png", "query": "The two polygons are similar. Find UT.", "answer": "22.5", "origin_answer": "22.5"}
+{"image": "data/geometry3k-images/test_32.png", "query": "Find the measure of $∠A$ to the nearest tenth.", "answer": "41.8", "origin_answer": "41.8"}
+{"image": "data/geometry3k-images/test_33.png", "query": "Find $m \\angle H$.", "answer": "31", "origin_answer": "31"}
+{"image": "data/geometry3k-images/test_34.png", "query": "Find $x$.", "answer": "90", "origin_answer": "90"}
+{"image": "data/geometry3k-images/test_35.png", "query": "$m \\widehat{AC}=160$ and $m \\angle BEC=38$. What is $m \\angle AEB$?", "answer": "42", "origin_answer": "42"}
+{"image": "data/geometry3k-images/test_36.png", "query": "A plane travels from Des Moines to Phoenix, on to Atlanta, and back to Des Moines, as shown below. Find the distance in miles from  Phoenix to Atlanta if the total trip was 3482 miles.", "answer": "1591", "origin_answer": "1591"}
+{"image": "data/geometry3k-images/test_37.png", "query": "Find $x$.", "answer": "123", "origin_answer": "123"}
+{"image": "data/geometry3k-images/test_38.png", "query": "Solve for x in the figure. Round to the nearest tenth if necessary.", "answer": "3", "origin_answer": "3"}
+{"image": "data/geometry3k-images/test_39.png", "query": "In the figure, $\\overline{A D}$ is perpendicular to $\\overline{B C}$ and $\\overline{A B}$ is perpendicular to $\\overline{A C}$. What is $B C ?$", "answer": "20", "origin_answer": "20"}
+{"image": "data/geometry3k-images/test_40.png", "query": "Find the area of the figure. Round to the nearest tenth.", "answer": "30.2", "origin_answer": "30.2"}
+{"image": "data/geometry3k-images/test_41.png", "query": "If $c=5,$ find $b$", "answer": "2.5*(3**0.5)", "origin_answer": "2.5 \\sqrt { 3 }"}
+{"image": "data/geometry3k-images/test_42.png", "query": "Find $z$.", "answer": "12", "origin_answer": "12"}
+{"image": "data/geometry3k-images/test_43.png", "query": "Find the area of the shaded region. Assume that the polygon is regular unless otherwise stated. Round to the nearest tenth.", "answer": "216.6", "origin_answer": "216.6"}
+{"image": "data/geometry3k-images/test_44.png", "query": "Find $m \\angle 2$.", "answer": "39", "origin_answer": "39"}
+{"image": "data/geometry3k-images/test_45.png", "query": "Find x. Round to the nearest tenth.\r\n", "answer": "5.8", "origin_answer": "5.8"}
+{"image": "data/geometry3k-images/test_46.png", "query": "$m$ is the perpendicular bisector of $XZ$, $WZ=14.9$. Find $WX$.", "answer": "14.9", "origin_answer": "14.9"}
+{"image": "data/geometry3k-images/test_47.png", "query": "$m∠9 = 2x - 4$, $m∠10 = 2x + 4$. Find the measure of $∠10$.", "answer": "94", "origin_answer": "94"}
+{"image": "data/geometry3k-images/test_48.png", "query": "Find $JL$.", "answer": "14", "origin_answer": "14"}
+{"image": "data/geometry3k-images/test_49.png", "query": "Find the area of the parallelogram. Round to the nearest tenth if necessary.", "answer": "91.9", "origin_answer": "91.9"}
+{"image": "data/geometry3k-images/test_50.png", "query": "Find x.", "answer": "15", "origin_answer": "15"}
+{"image": "data/geometry3k-images/test_51.png", "query": "Find $ST$.", "answer": "19", "origin_answer": "19"}
+{"image": "data/geometry3k-images/test_52.png", "query": "Find x.", "answer": "18*(6**0.5)", "origin_answer": "18 \\sqrt { 6 }"}
+{"image": "data/geometry3k-images/test_53.png", "query": "Find $EG$ if $G$ is the incenter of $\\triangle ABC$.", "answer": "5", "origin_answer": "5"}
+{"image": "data/geometry3k-images/test_54.png", "query": "Find $x$ so that each quadrilateral is a parallelogram.", "answer": "13", "origin_answer": "13"}
+{"image": "data/geometry3k-images/test_55.png", "query": "Find $x$.", "answer": "3", "origin_answer": "3"}
+{"image": "data/geometry3k-images/test_56.png", "query": "Find x.", "answer": "1", "origin_answer": "1"}
+{"image": "data/geometry3k-images/test_57.png", "query": "Tangent $\\overline{M P}$ is drawn to $\\odot O .$ Find $x$ if $M O=20$", "answer": "12", "origin_answer": "12"}
+{"image": "data/geometry3k-images/test_58.png", "query": "In H, the diameter is $18$, $LM = 12$, and $m \\widehat {LM} = 84$. Find $HP$. Round to the nearest hundredth.", "answer": "6.71", "origin_answer": "6.71"}
+{"image": "data/geometry3k-images/test_59.png", "query": "Find x to the nearest tenth. Assume that segments that appear to be tangent are tangent.", "answer": "21.6", "origin_answer": "21.6"}
+{"image": "data/geometry3k-images/test_60.png", "query": "If $m \\widehat{F E}=118, m \\widehat{A B}=108$, $m \\angle E G B=52,$ and $m \\angle E F B=30$, find $m \\widehat{C F}$", "answer": "44", "origin_answer": "44"}
+{"image": "data/geometry3k-images/test_61.png", "query": "If $c=5,$ find $a$", "answer": "2.5", "origin_answer": "2.5"}
+{"image": "data/geometry3k-images/test_62.png", "query": "Find x.", "answer": "5", "origin_answer": "5"}
+{"image": "data/geometry3k-images/test_63.png", "query": "Find the length of $\\widehat {AB}$. Round to the nearest hundredth.", "answer": "9.77", "origin_answer": "9.77"}
+{"image": "data/geometry3k-images/test_64.png", "query": "In the figure, line $l$ is parallel to line $m$. Line $n$ intersects both $l$ and $m$. Which of the following lists includes all of the angles that are supplementary to $ ∠1 $?", "answer": "angles2,3,6,and7", "origin_answer": "angles 2,3, 6, and 7"}
+{"image": "data/geometry3k-images/test_65.png", "query": "In the figure, $m∠3 = 43$. Find the measure of $\\angle 11$.", "answer": "43", "origin_answer": "43"}
+{"image": "data/geometry3k-images/test_66.png", "query": "If AB || DC, find x.", "answer": "115", "origin_answer": "115"}
+{"image": "data/geometry3k-images/test_67.png", "query": "Find the measure of $\\angle 2$.", "answer": "33", "origin_answer": "33"}
+{"image": "data/geometry3k-images/test_68.png", "query": "The diagram shows the layout of Elm, Plum, and Oak streets. Find the value of $x.$", "answer": "125", "origin_answer": "125"}
+{"image": "data/geometry3k-images/test_69.png", "query": "Find $y$.", "answer": "5*(5**0.5)", "origin_answer": "5 \\sqrt { 5 }"}
+{"image": "data/geometry3k-images/test_70.png", "query": "In $\\odot P, m \\angle M P L=65$ and $\\overline{N P} \\perp \\overline{P L}$.\r\nFind $m \\widehat{N M}$", "answer": "25", "origin_answer": "25"}
+{"image": "data/geometry3k-images/test_71.png", "query": "Each pair of polygons is similar. Find y", "answer": "5", "origin_answer": "5"}
+{"image": "data/geometry3k-images/test_72.png", "query": "Use parallelogram $JKLM$ to find $m \\angle KJL$.", "answer": "30", "origin_answer": "30"}
+{"image": "data/geometry3k-images/test_73.png", "query": "Find the area of the figure. Round to the nearest tenth if necessary.", "answer": "63", "origin_answer": "63"}
+{"image": "data/geometry3k-images/test_74.png", "query": "Find the perimeter of the parallelogram. Round to the nearest tenth if necessary.", "answer": "76", "origin_answer": "76"}
+{"image": "data/geometry3k-images/test_75.png", "query": "Trapezoid $GHJK$ has an area of 75 square meters. Find the height.", "answer": "5", "origin_answer": "5"}
+{"image": "data/geometry3k-images/test_76.png", "query": "Find x", "answer": "58", "origin_answer": "58"}
+{"image": "data/geometry3k-images/test_77.png", "query": "Find x. Round to the nearest tenth.", "answer": "30.2", "origin_answer": "30.2"}
+{"image": "data/geometry3k-images/test_78.png", "query": "For the pair of similar figures, find the area of the green figure.", "answer": "9", "origin_answer": "9"}
+{"image": "data/geometry3k-images/test_79.png", "query": "In $\\odot X, A B=30, C D=30,$ and $m \\widehat{C Z}=40$\r\nFind $m\\widehat{C D}$", "answer": "80", "origin_answer": "80"}
+{"image": "data/geometry3k-images/test_80.png", "query": "Quadrilateral EFGH is a rectangle. If FK = 32 feet, find EG.", "answer": "64", "origin_answer": "64"}
+{"image": "data/geometry3k-images/test_81.png", "query": "Find $x$.", "answer": "7", "origin_answer": "7"}
+{"image": "data/geometry3k-images/test_82.png", "query": "In the figure, $m \\angle 1=4 p+15$, $m \\angle 3=3 p-10$ and $m \\angle 4=6 r+5 $. Find the value of $p$.", "answer": "25", "origin_answer": "25"}
+{"image": "data/geometry3k-images/test_83.png", "query": "Find x.", "answer": "(21**0.5)", "origin_answer": "\\sqrt { 21 }"}
+{"image": "data/geometry3k-images/test_84.png", "query": "Find $BC$.", "answer": "13", "origin_answer": "13"}
+{"image": "data/geometry3k-images/test_85.png", "query": "Find x.", "answer": "24*(3**0.5)", "origin_answer": "24 \\sqrt { 3 }"}
+{"image": "data/geometry3k-images/test_86.png", "query": "If $ZP = 4x - 9$ and $PY = 2x + 5$, find $ZX$.", "answer": "38", "origin_answer": "38"}
+{"image": "data/geometry3k-images/test_87.png", "query": "Find y", "answer": "6*(3**0.5)", "origin_answer": "6 \\sqrt { 3 }"}
+{"image": "data/geometry3k-images/test_88.png", "query": "Find the measure of $∠T$ to the nearest tenth.", "answer": "21.8", "origin_answer": "21.8"}
+{"image": "data/geometry3k-images/test_89.png", "query": "Find x to the nearest tenth. Assume that segments that appear to be tangent are tangent.", "answer": "7.2", "origin_answer": "7.2"}
+{"image": "data/geometry3k-images/test_90.png", "query": "$\\overline{AB} \\cong \\overline{DF}$. Find $x$.", "answer": "2", "origin_answer": "2"}
+{"image": "data/geometry3k-images/test_91.png", "query": "Find $m \\angle WYZ$.", "answer": "23", "origin_answer": "23"}
+{"image": "data/geometry3k-images/test_92.png", "query": "Find the area of the shaded region.", "answer": "22.1", "origin_answer": "22.1"}
+{"image": "data/geometry3k-images/test_93.png", "query": "Find x", "answer": "2", "origin_answer": "2"}
+{"image": "data/geometry3k-images/test_94.png", "query": "In $\\odot O, \\overline{E C}$ and $\\overline{A B}$ are diameters, and $\\angle B O D \\cong \\angle D O E \\cong \\angle E O F \\cong \\angle F O A$\r\nFind $m\\widehat{A D}$", "answer": "135", "origin_answer": "135"}
+{"image": "data/geometry3k-images/test_95.png", "query": "Find $x$  if $AE=3, AB=2$, $BC=6,$ and $ED=2x-3$", "answer": "6", "origin_answer": "6"}
+{"image": "data/geometry3k-images/test_96.png", "query": "Find $A E$ if $A B=12, A C=16,$ and $E D=5$", "answer": "15", "origin_answer": "15"}
+{"image": "data/geometry3k-images/test_97.png", "query": "Find $x$ in the given parallelogram", "answer": "38", "origin_answer": "38"}
+{"image": "data/geometry3k-images/test_98.png", "query": "Find x", "answer": "115", "origin_answer": "115"}
+{"image": "data/geometry3k-images/test_99.png", "query": "Find the area of the figure. Round to the nearest tenth if necessary.", "answer": "129.9", "origin_answer": "129.9"}
+{"image": "data/geometry3k-images/test_100.png", "query": "Find $a$ in the given parallelogram", "answer": "9", "origin_answer": "9"}
+{"image": "data/geometry3k-images/test_101.png", "query": "Find $m\\angle B$", "answer": "120", "origin_answer": "120"}
+{"image": "data/geometry3k-images/test_102.png", "query": "Find GH in the kite", "answer": "(369**0.5)", "origin_answer": "\\sqrt { 369 }"}
+{"image": "data/geometry3k-images/test_103.png", "query": "Find the value of the variable $x$ in the figure.", "answer": "125", "origin_answer": "125"}
+{"image": "data/geometry3k-images/test_104.png", "query": "Refer to the figure at the right. Find the value of $m ∠FCE$ if $ p \\parallel q $.", "answer": "105", "origin_answer": "105"}
+{"image": "data/geometry3k-images/test_105.png", "query": "What is the measure of $\\angle B$ if $m \\angle A=10 ?$", "answer": "30", "origin_answer": "30"}
+{"image": "data/geometry3k-images/test_106.png", "query": "Express the ratio of $\\cos N$ as a decimal to the nearest hundredth.", "answer": "0.38", "origin_answer": "0.38"}
+{"image": "data/geometry3k-images/test_107.png", "query": "Find $m \\angle R$", "answer": "29.1", "origin_answer": "29.1"}
+{"image": "data/geometry3k-images/test_108.png", "query": "Find $x$.", "answer": "8", "origin_answer": "8"}
+{"image": "data/geometry3k-images/test_109.png", "query": "Find the area of the figure. Round to the nearest tenth.", "answer": "50.2", "origin_answer": "50.2"}
+{"image": "data/geometry3k-images/test_110.png", "query": "Find y.", "answer": "21*(3**0.5)", "origin_answer": "21 \\sqrt { 3 }"}
+{"image": "data/geometry3k-images/test_111.png", "query": "Find the area of the shaded sector. Round to the nearest tenth.", "answer": "182.6", "origin_answer": "182.6"}
+{"image": "data/geometry3k-images/test_112.png", "query": "$\\triangle K L N$ and $\\triangle L M N$ are isosceles and $m \\angle J K N=130$. Find the measure of $\\angle J$.", "answer": "106", "origin_answer": "106"}
+{"image": "data/geometry3k-images/test_113.png", "query": "Find x.", "answer": "12", "origin_answer": "12"}
+{"image": "data/geometry3k-images/test_114.png", "query": "$ABCD$ is a rhombus. If $PB = 12$, $AB = 15$, and $m \\angle ABD = 24$, Find $m\\angle BDA$", "answer": "24", "origin_answer": "24"}
+{"image": "data/geometry3k-images/test_115.png", "query": "Find $y$.", "answer": "12", "origin_answer": "12"}
+{"image": "data/geometry3k-images/test_116.png", "query": "Find the value of $x$ in each diagram", "answer": "68", "origin_answer": "68"}
+{"image": "data/geometry3k-images/test_117.png", "query": "Find $m \\angle RST$.", "answer": "55", "origin_answer": "55"}
+{"image": "data/geometry3k-images/test_118.png", "query": "$∠6$ and $∠8$ are complementary, $m∠8 = 47$. Find the measure of $\\angle 7$.", "answer": "90", "origin_answer": "90"}
+{"image": "data/geometry3k-images/test_119.png", "query": "Find the measure of $m\\angle 1$. Assume that segments that appear\r\ntangent are tangent.", "answer": "129", "origin_answer": "129"}
+{"image": "data/geometry3k-images/test_120.png", "query": "Let $\\overline{G H}$ be the median of $R S B A .$ Find $G H$", "answer": "62", "origin_answer": "62"}
+{"image": "data/geometry3k-images/test_121.png", "query": "Use parallelogram PQRS to find $QP$", "answer": "5", "origin_answer": "5"}
+{"image": "data/geometry3k-images/test_122.png", "query": "Quadrilateral $WXYZ$ is inscribed in $\\odot V$. Find $m \\angle X$.", "answer": "120", "origin_answer": "120"}
+{"image": "data/geometry3k-images/test_123.png", "query": "Find the height of the parallelogram given its area with 2000 square units.", "answer": "40", "origin_answer": "40"}
+{"image": "data/geometry3k-images/test_124.png", "query": "Find $m \\angle A$ of quadrilateral ABCD", "answer": "135", "origin_answer": "135"}
+{"image": "data/geometry3k-images/test_125.png", "query": "Find y", "answer": "10", "origin_answer": "10"}
+{"image": "data/geometry3k-images/test_126.png", "query": "Find the measure of the altitude drawn to the hypotenuse.", "answer": "4*(3**0.5)", "origin_answer": "4 \\sqrt { 3 }"}
+{"image": "data/geometry3k-images/test_127.png", "query": "Find the area of the shaded region. Round to the nearest tenth.", "answer": "157.1", "origin_answer": "157.1"}
+{"image": "data/geometry3k-images/test_128.png", "query": "Find x. Round to the nearest tenth.", "answer": "30.7", "origin_answer": "30.7"}
+{"image": "data/geometry3k-images/test_129.png", "query": "Find $y$ in each figure.", "answer": "6", "origin_answer": "6"}
+{"image": "data/geometry3k-images/test_130.png", "query": "Find $m \\angle S$.", "answer": "34", "origin_answer": "34"}
+{"image": "data/geometry3k-images/test_131.png", "query": "In the figure, $m∠3 = 110$ and $m ∠ 12 = 55$. Find the measure of $∠13$.", "answer": "55", "origin_answer": "55"}
+{"image": "data/geometry3k-images/test_132.png", "query": "Find x.", "answer": "3*(35**0.5)", "origin_answer": "3 \\sqrt { 35 }"}
+{"image": "data/geometry3k-images/test_133.png", "query": "Quadrilateral EFGH is a rectangle. If $m \\angle HGE = 13$, find $m\\angle FGE$.", "answer": "77", "origin_answer": "77"}
+{"image": "data/geometry3k-images/test_134.png", "query": "Find x in the parallelogram", "answer": "37", "origin_answer": "37"}
+{"image": "data/geometry3k-images/test_135.png", "query": "Find the side length in isosceles triangle $DEF$.", "answer": "11", "origin_answer": "11"}
+{"image": "data/geometry3k-images/test_136.png", "query": "Find the length of $\\widehat {JK}$. Round to the nearest hundredth.", "answer": "13.74", "origin_answer": "13.74"}
+{"image": "data/geometry3k-images/test_137.png", "query": "Use parallelogram to find $b$", "answer": "11", "origin_answer": "11"}
+{"image": "data/geometry3k-images/test_138.png", "query": "If PR || KL, KN = 9, LN = 16, PM = 2 KP, find MN", "answer": "12", "origin_answer": "12"}
+{"image": "data/geometry3k-images/test_139.png", "query": "Find $x$. Round to the nearest tenth.", "answer": "14.1", "origin_answer": "14.1"}
+{"image": "data/geometry3k-images/test_140.png", "query": "Find the area of the rhombus. ", "answer": "132", "origin_answer": "132"}
+{"image": "data/geometry3k-images/test_141.png", "query": "Find TX if $E X=24$ and $D E=7$", "answer": "32", "origin_answer": "32"}
+{"image": "data/geometry3k-images/test_142.png", "query": "Find $m \\widehat {LP}$.", "answer": "150", "origin_answer": "150"}
+{"image": "data/geometry3k-images/test_143.png", "query": "Express the ratio of $\\sin N$ as a decimal to the nearest hundredth.", "answer": "0.92", "origin_answer": "0.92"}
+{"image": "data/geometry3k-images/test_144.png", "query": "Find x.", "answer": "1", "origin_answer": "1"}
+{"image": "data/geometry3k-images/test_145.png", "query": "Find the area of the figure. Round to the nearest hundredth, if necessary.", "answer": "4.8", "origin_answer": "4.8"}
+{"image": "data/geometry3k-images/test_146.png", "query": "Find $x$.", "answer": "3.5", "origin_answer": "3.5"}
+{"image": "data/geometry3k-images/test_147.png", "query": "Use parallelogram ABCD to find $m\\angle ADC$", "answer": "128", "origin_answer": "128"}
+{"image": "data/geometry3k-images/test_148.png", "query": "Find the measure of $\\angle 3$ if $\\overline{A B} \\perp \\overline{B C}$.", "answer": "76", "origin_answer": "76"}
+{"image": "data/geometry3k-images/test_149.png", "query": "In $\\triangle DEF, m \\angle E=108, m \\angle F=26$, and $f=20$, Find $d$ to the nearest whole number.", "answer": "33", "origin_answer": "33"}
+{"image": "data/geometry3k-images/test_150.png", "query": "Find $y$ so that each quadrilateral is a parallelogram.", "answer": "4", "origin_answer": "4"}
+{"image": "data/geometry3k-images/test_151.png", "query": "Find $m \\angle 4$.", "answer": "33", "origin_answer": "33"}
+{"image": "data/geometry3k-images/test_152.png", "query": "Find $cos C$", "answer": "4/5", "origin_answer": "\\frac { 4 } { 5 }"}
+{"image": "data/geometry3k-images/test_153.png", "query": "In rhombus $A B C D, m \\angle D A B=2, m \\angle A D C$ and $C B=6$. Find $m \\angle A C D$", "answer": "60", "origin_answer": "60"}
+{"image": "data/geometry3k-images/test_154.png", "query": "Find AB", "answer": "10", "origin_answer": "10"}
+{"image": "data/geometry3k-images/test_155.png", "query": "Find $x$ in the figure.", "answer": "14", "origin_answer": "14"}
+{"image": "data/geometry3k-images/test_156.png", "query": "Circle $O$ has a radius of 13 inches. Radius $\\overline{O B}$ is perpendicular to chord $\\overline{C D}$ which is 24 inches long.\r\nIf $m \\widehat{C D}=134,$ find $m \\widehat{C B}$", "answer": "67", "origin_answer": "67"}
+{"image": "data/geometry3k-images/test_157.png", "query": "In $\\odot M$, $FL=24,HJ=48$, and $m \\widehat {HP}=65$. Find $FG$.", "answer": "48", "origin_answer": "48"}
+{"image": "data/geometry3k-images/test_158.png", "query": "Cut four congruent triangles off the corners of a rectangle to make an octagon. What is the area of the octagon?", "answer": "528", "origin_answer": "528"}
+{"image": "data/geometry3k-images/test_159.png", "query": "Find $m\\angle A$", "answer": "60", "origin_answer": "60"}
+{"image": "data/geometry3k-images/test_160.png", "query": "Use parallelogram JKLM to find $m \\angle KJL$ if $J K=2 b+3$ and $J M=3 a$.", "answer": "30", "origin_answer": "30"}
+{"image": "data/geometry3k-images/test_161.png", "query": "Find x.", "answer": "17/2*(3**0.5)", "origin_answer": "\\frac { 17 } { 2 } \\sqrt { 3 }"}
+{"image": "data/geometry3k-images/test_162.png", "query": "Find $XZ$.", "answer": "34", "origin_answer": "34"}
+{"image": "data/geometry3k-images/test_163.png", "query": "Find $XW$.", "answer": "12", "origin_answer": "12"}
+{"image": "data/geometry3k-images/test_164.png", "query": "Find x so that $GJ \\parallel FK$. $G H=x+3.5, H J=x-8.5, F H=21, H K=7$.\r\n", "answer": "14.5", "origin_answer": "14.5"}
+{"image": "data/geometry3k-images/test_165.png", "query": "In $\\odot P, m \\angle M P L=65$ and $\\overline{N P} \\perp \\overline{P L}$.\r\nFind $m \\widehat{N J K}$", "answer": "155", "origin_answer": "155"}
+{"image": "data/geometry3k-images/test_166.png", "query": "A square is inscribed in a circle having a radius of $6$ inches. Find the length of each side of the square.", "answer": "6\\sqrt2", "origin_answer": "6 \\sqrt 2"}
+{"image": "data/geometry3k-images/test_167.png", "query": "One diagonal of a rhombus is twice as long as the other diagonal. If the area of the rhombus is 169 square millimeters, what are the lengths of the diagonals?", "answer": "26", "origin_answer": "26"}
+{"image": "data/geometry3k-images/test_168.png", "query": "Find x", "answer": "9", "origin_answer": "9"}
+{"image": "data/geometry3k-images/test_169.png", "query": "If $AB=12,AC=16$, and $ED=5$, find $AE$.", "answer": "15", "origin_answer": "15"}
+{"image": "data/geometry3k-images/test_170.png", "query": "Find $x$ so that $\\overline{BE}$ and $\\overline{AD}$ are perpendicular.", "answer": "10", "origin_answer": "10"}
+{"image": "data/geometry3k-images/test_171.png", "query": "Find DE", "answer": "9", "origin_answer": "9"}
+{"image": "data/geometry3k-images/test_172.png", "query": "Find the area of the shaded region formed by the circle and regular polygon. Round to the nearest tenth.", "answer": "76.4", "origin_answer": "76.4"}
+{"image": "data/geometry3k-images/test_173.png", "query": "In the figure, $m ∠ 12 = 64$. Find the measure of $ \\angle 7$.", "answer": "64", "origin_answer": "64"}
+{"image": "data/geometry3k-images/test_174.png", "query": "Find $BC$.", "answer": "9", "origin_answer": "9"}
+{"image": "data/geometry3k-images/test_175.png", "query": "Find $m \\angle 1$.", "answer": "37.5", "origin_answer": "37.5"}
+{"image": "data/geometry3k-images/test_176.png", "query": "Express the ratio of $\\sin P$ as a decimal to the nearest hundredth.", "answer": "0.88", "origin_answer": "0.88"}
+{"image": "data/geometry3k-images/test_177.png", "query": "Find $x$. $A=357$ in$^2$. ", "answer": "21", "origin_answer": "21"}
+{"image": "data/geometry3k-images/test_178.png", "query": "Find $x$ so that $a ∥ b$.", "answer": "14", "origin_answer": "14"}
+{"image": "data/geometry3k-images/test_179.png", "query": "$\\overline{GJ}$ is a diameter of $\\odot K$. Find $m \\widehat {GLJ}$.", "answer": "180", "origin_answer": "180"}
+{"image": "data/geometry3k-images/test_180.png", "query": "Find $C F$ if $\\overline{B F}$ bisects $\\angle A B C$ and $\\overline{A C} \\| \\overline{E D}, B A=6, B C=7.5$, $A C=9,$ and $D E=9$", "answer": "5", "origin_answer": "5"}
+{"image": "data/geometry3k-images/test_181.png", "query": "Find $m \\angle K$", "answer": "100", "origin_answer": "100"}
+{"image": "data/geometry3k-images/test_182.png", "query": "Find the value of the variable $y$ in the figure.", "answer": "50", "origin_answer": "50"}
+{"image": "data/geometry3k-images/test_183.png", "query": "Find the value of $t$ in the parallelogram.", "answer": "7", "origin_answer": "7"}
+{"image": "data/geometry3k-images/test_184.png", "query": "Find the perimeter of the triangle. Round to the nearest hundredth.", "answer": "8.73", "origin_answer": "8.73"}
+{"image": "data/geometry3k-images/test_185.png", "query": "The segment is tangent to the circle. Find the value of $x$.", "answer": "3", "origin_answer": "3"}
+{"image": "data/geometry3k-images/test_186.png", "query": "Find the area of the shaded region. Round to the nearest tenth.", "answer": "58.9", "origin_answer": "58.9"}
+{"image": "data/geometry3k-images/test_187.png", "query": "Find the measure of $m \\widehat{YXZ}$.", "answer": "166", "origin_answer": "166"}
+{"image": "data/geometry3k-images/test_188.png", "query": "Find x.", "answer": "14", "origin_answer": "14"}
+{"image": "data/geometry3k-images/test_189.png", "query": "Find $y$.", "answer": "2", "origin_answer": "2"}
+{"image": "data/geometry3k-images/test_190.png", "query": "Find x.", "answer": "8*(5**0.5)", "origin_answer": "8 \\sqrt { 5 }"}
+{"image": "data/geometry3k-images/test_191.png", "query": "Find y.", "answer": "48", "origin_answer": "48"}
+{"image": "data/geometry3k-images/test_192.png", "query": "Use parallelogram WXYZ to find $m\\angle XYZ$", "answer": "105", "origin_answer": "105"}
+{"image": "data/geometry3k-images/test_193.png", "query": "Find $x$.", "answer": "9.5", "origin_answer": "9.5"}
+{"image": "data/geometry3k-images/test_194.png", "query": "Find the measure of $m\\angle 2$. Assume that segments that appear\r\ntangent are tangent.", "answer": "157.5", "origin_answer": "157.5"}
+{"image": "data/geometry3k-images/test_195.png", "query": "Find the perimeter of the parallelogram. Round to the nearest tenth if necessary.", "answer": "64", "origin_answer": "64"}
+{"image": "data/geometry3k-images/test_196.png", "query": "Quadrilateral DEFG is a rectangle.  If $m \\angle EFD = 2x - 3$ and $m \\angle DFG = x + 12$,\r\nfind $m \\angle EFD$.", "answer": "51", "origin_answer": "51"}
+{"image": "data/geometry3k-images/test_197.png", "query": "Find y", "answer": "4*(2**0.5)", "origin_answer": "4 \\sqrt { 2 }"}
+{"image": "data/geometry3k-images/test_198.png", "query": "Circle $O$ has a radius of 13 inches. Radius $\\overline{O B}$ is perpendicular to chord $\\overline{C D}$ which is 24 inches long.\r\nFind OX", "answer": "5", "origin_answer": "5"}
+{"image": "data/geometry3k-images/test_199.png", "query": "Find the area of $▱ JKLM$.", "answer": "24", "origin_answer": "24"}
+{"image": "data/geometry3k-images/test_200.png", "query": "Find $m \\angle 1$.", "answer": "108", "origin_answer": "108"}
+{"image": "data/geometry3k-images/test_201.png", "query": "Find $AB$.", "answer": "4.1", "origin_answer": "4.1"}
+{"image": "data/geometry3k-images/test_202.png", "query": "Find $RS$ if $\\triangle QRS$ is an equilateral triangle.", "answer": "2", "origin_answer": "2"}
+{"image": "data/geometry3k-images/test_203.png", "query": "If two sides of a triangle measure 12 and 7, which of the following cannot be the perimeter of the triangle?", "answer": "38", "origin_answer": "38"}
+{"image": "data/geometry3k-images/test_204.png", "query": "Find the area of the triangle. Round to the nearest hundredth.", "answer": "7.51", "origin_answer": "7.51"}
+{"image": "data/geometry3k-images/test_205.png", "query": "$\\overline{AB}$ is a diameter, $AC=8$ inches, and $BC=15$ inches. Find the radius of the circle.", "answer": "8.5", "origin_answer": "8.5"}
+{"image": "data/geometry3k-images/test_206.png", "query": "Find $m \\angle 1$.", "answer": "70", "origin_answer": "70"}
+{"image": "data/geometry3k-images/test_207.png", "query": "Find $w$ in the given parallelogram", "answer": "5", "origin_answer": "5"}
+{"image": "data/geometry3k-images/test_208.png", "query": "Find $x$.", "answer": "5/3", "origin_answer": "\\frac { 5 } { 3 }"}
+{"image": "data/geometry3k-images/test_209.png", "query": "Find y", "answer": "5", "origin_answer": "5"}
+{"image": "data/geometry3k-images/test_210.png", "query": "If $\\triangle L M N \\sim \\triangle Q R S, Q R=35, R S=37, S Q=12$, and $N L=5$, find the perimeter of $\\triangle L M N$. ", "answer": "35", "origin_answer": "35"}
+{"image": "data/geometry3k-images/test_211.png", "query": "Find the measure of $\\angle 7$ if $m∠4= m∠5$.", "answer": "89", "origin_answer": "89"}
+{"image": "data/geometry3k-images/test_212.png", "query": "$\\overline{XY}$ and $\\overline{XZ}$ are midsegments of $\\triangle RST$. Find $ST$.", "answer": "14", "origin_answer": "14"}
+{"image": "data/geometry3k-images/test_213.png", "query": "If $m∠5 = 7x - 5$ and $m∠4 = 2x + 23$, find $x$.", "answer": "18", "origin_answer": "18"}
+{"image": "data/geometry3k-images/test_214.png", "query": "Find the measure of $\\angle 2$.", "answer": "76", "origin_answer": "76"}
+{"image": "data/geometry3k-images/test_215.png", "query": "Use parallelogram ABCD to find $m\\angle ACD$", "answer": "29", "origin_answer": "29"}
+{"image": "data/geometry3k-images/test_216.png", "query": "Find $CD$ if $AC=x-3$, $BE=20, AB=16,$ and $CD=x+5$", "answer": "40", "origin_answer": "40"}
+{"image": "data/geometry3k-images/test_217.png", "query": "$UJ=9, VJ=3$, and $ZT=18$. Find $SV$.", "answer": "9", "origin_answer": "9"}
+{"image": "data/geometry3k-images/test_218.png", "query": "In $\\odot O, \\overline{E C}$ and $\\overline{A B}$ are diameters, and $\\angle B O D \\cong \\angle D O E \\cong \\angle E O F \\cong \\angle F O A$\r\nFind $m\\widehat{A E}$", "answer": "90", "origin_answer": "90"}
+{"image": "data/geometry3k-images/test_219.png", "query": "In $\\triangle PQR$, $ZQ=3a-11$, $ZP=a+5$, $PY=2 c-1$, $YR=4 c-11$, $m \\angle PRZ=4 b-17$, $m \\angle ZRQ=3 b-4$, $m \\angle QYR=7 b+6$, and $m \\angle PXR=2 a+10$.  If $\\overline{RZ}$ is an angle bisector, find $m∠PRZ$.", "answer": "35", "origin_answer": "35"}
+{"image": "data/geometry3k-images/test_220.png", "query": "Which segments are parallel?", "answer": "ADandBE", "origin_answer": "A D and B E"}
+{"image": "data/geometry3k-images/test_221.png", "query": "Use parallelogram MNPR to find $m \\angle RMN$", "answer": "109", "origin_answer": "109"}
+{"image": "data/geometry3k-images/test_222.png", "query": "If WXYZ is a kite, find WP", "answer": "(20**0.5)", "origin_answer": "\\sqrt { 20 }"}
+{"image": "data/geometry3k-images/test_223.png", "query": "Find x.", "answer": "17", "origin_answer": "17"}
+{"image": "data/geometry3k-images/test_224.png", "query": "In the figure below, $∠ABC$ is intersected by parallel lines $l$ and $m$. What is the measure of $∠ABC$? Express your answer in degrees.", "answer": "71", "origin_answer": "71"}
+{"image": "data/geometry3k-images/test_225.png", "query": "Find z", "answer": "6", "origin_answer": "6"}
+{"image": "data/geometry3k-images/test_226.png", "query": "If DB = 24, AE = 3, and EC = 18, find AD", "answer": "4", "origin_answer": "4"}
+{"image": "data/geometry3k-images/test_227.png", "query": "Find the measure of $m∠1$.", "answer": "109", "origin_answer": "109"}
+{"image": "data/geometry3k-images/test_228.png", "query": "In the figure, $m∠1 = 50$ and $m∠3 = 60$. Find the measure of $\\angle 6$.", "answer": "70", "origin_answer": "70"}
+{"image": "data/geometry3k-images/test_229.png", "query": "Find $x$.", "answer": "35", "origin_answer": "35"}
+{"image": "data/geometry3k-images/test_230.png", "query": "Find the perimeter of the parallelogram. Round to the nearest tenth if necessary.", "answer": "50", "origin_answer": "50"}
+{"image": "data/geometry3k-images/test_231.png", "query": "Use parallelogram ABCD to find $m\\angle DAC$", "answer": "72", "origin_answer": "72"}
+{"image": "data/geometry3k-images/test_232.png", "query": "In the figure, $m∠1 = 123$. Find the measure of $\\angle 14$.", "answer": "57", "origin_answer": "57"}
+{"image": "data/geometry3k-images/test_233.png", "query": "Use parallelogram $JKLM$ to find $m \\angle JKL$.", "answer": "80", "origin_answer": "80"}
+{"image": "data/geometry3k-images/test_234.png", "query": "Refer to the figure at the right. Find y.", "answer": "6.75", "origin_answer": "6.75"}
+{"image": "data/geometry3k-images/test_235.png", "query": "Find the area of the figure. Round to the nearest tenth if necessary.", "answer": "95", "origin_answer": "95"}
+{"image": "data/geometry3k-images/test_236.png", "query": "Find $x$.", "answer": "6", "origin_answer": "6"}
+{"image": "data/geometry3k-images/test_237.png", "query": "For the pair of similar figures, use the given areas to find $x$.", "answer": "16", "origin_answer": "16"}
+{"image": "data/geometry3k-images/test_238.png", "query": "Find x.", "answer": "8", "origin_answer": "8"}
+{"image": "data/geometry3k-images/test_239.png", "query": "Find $a,$ if $F G=18, G H=42,$ and $F K=15$", "answer": "57", "origin_answer": "57"}
+{"image": "data/geometry3k-images/test_240.png", "query": "Find the area of the figure. Round to the nearest tenth if necessary.", "answer": "22.1", "origin_answer": "22.1"}
+{"image": "data/geometry3k-images/test_241.png", "query": "Find PT", "answer": "20/3", "origin_answer": "\\frac { 20 } { 3 }"}
+{"image": "data/geometry3k-images/test_242.png", "query": "Find $GD$.", "answer": "14", "origin_answer": "14"}
+{"image": "data/geometry3k-images/test_243.png", "query": "Find the area of the regular polygon figure. Round to the nearest tenth.", "answer": "101.8", "origin_answer": "101.8"}
+{"image": "data/geometry3k-images/test_244.png", "query": "Find x", "answer": "120", "origin_answer": "120"}
+{"image": "data/geometry3k-images/test_245.png", "query": "Find y.", "answer": "45", "origin_answer": "45"}
+{"image": "data/geometry3k-images/test_246.png", "query": "Find the area of the rhombus.", "answer": "168", "origin_answer": "168"}
+{"image": "data/geometry3k-images/test_247.png", "query": "Find $AB$ if $\\triangle ABC$ is an isosceles triangle with $\\overline{AB} \\cong \\overline{BC}$. ", "answer": "7", "origin_answer": "7"}
+{"image": "data/geometry3k-images/test_248.png", "query": "Find x. Round the side measure to the nearest tenth.", "answer": "69.8", "origin_answer": "69.8"}
+{"image": "data/geometry3k-images/test_249.png", "query": "Circle $J$ has a radius of $10$ units, $\\odot K$ has a radius of $8$ units, and $BC=5.4$ units. Find $JK$.", "answer": "12.6", "origin_answer": "12.6"}
+{"image": "data/geometry3k-images/test_250.png", "query": "The perimeter of this polygon is 60 centimeters. Find the length of each side of the polygon.\r\n", "answer": "12", "origin_answer": "12"}
+{"image": "data/geometry3k-images/test_251.png", "query": "If $XN=6,XM=2$, and $XY=10$, find $NZ$.", "answer": "24", "origin_answer": "24"}
+{"image": "data/geometry3k-images/test_252.png", "query": "Find $x$ ", "answer": "1", "origin_answer": "1"}
+{"image": "data/geometry3k-images/test_253.png", "query": "Find BC", "answer": "6", "origin_answer": "6"}
+{"image": "data/geometry3k-images/test_254.png", "query": "Find $x$.", "answer": "30", "origin_answer": "30"}
+{"image": "data/geometry3k-images/test_255.png", "query": "Find $\\widehat{\\mathrm{WN}}$ if $\\triangle \\mathrm{IWN}$ is equilateral and $W N=5$", "answer": "5/3π", "origin_answer": "\\frac { 5 } { 3 } \\pi"}
+{"image": "data/geometry3k-images/test_256.png", "query": "Find x.", "answer": "4*(15**0.5)", "origin_answer": "4 \\sqrt { 15 }"}
+{"image": "data/geometry3k-images/test_257.png", "query": "Find x.", "answer": "4*(2**0.5)", "origin_answer": "4 \\sqrt { 2 }"}
+{"image": "data/geometry3k-images/test_258.png", "query": "Find the value of the variable $x$ in the figure.", "answer": "54", "origin_answer": "54"}
+{"image": "data/geometry3k-images/test_259.png", "query": "The area $A$ of the shaded region is given. Find $x$. $A = 66$ cm$^2$ .", "answer": "13.0", "origin_answer": "13.0"}
+{"image": "data/geometry3k-images/test_260.png", "query": "Find the value of x.", "answer": "163", "origin_answer": "163"}
+{"image": "data/geometry3k-images/test_261.png", "query": "$\\overline{CH} \\cong \\overline{KJ}$. Find $x$.", "answer": "55", "origin_answer": "55"}
+{"image": "data/geometry3k-images/test_262.png", "query": "In regular hexagon UVWXYZ, each side is 12 centimeters long. Find $W Y$.", "answer": "12*(3**0.5)", "origin_answer": "12 \\sqrt { 3 }"}
+{"image": "data/geometry3k-images/test_263.png", "query": "Find $\\angle 5$", "answer": "50", "origin_answer": "50"}
+{"image": "data/geometry3k-images/test_264.png", "query": "In the figure, $m ∠1 = 58 $, $m ∠2 = 47 $, and $m ∠3 = 26 $. Find the measure of $∠9$.", "answer": "49", "origin_answer": "49"}
+{"image": "data/geometry3k-images/test_265.png", "query": "Find $m \\widehat {QTS}$.", "answer": "248", "origin_answer": "248"}
+{"image": "data/geometry3k-images/test_266.png", "query": "Use the Pythagorean Theorem to find the length of the hypotenuse of each right triangle.", "answer": "13", "origin_answer": "13"}
+{"image": "data/geometry3k-images/test_267.png", "query": "$∠1$ and $∠2$ form a linear pair and $m∠2 = 67$. Find the measure of $\\angle 1$.", "answer": "113", "origin_answer": "113"}
+{"image": "data/geometry3k-images/test_268.png", "query": "The diameters of $\\odot A, \\odot B,$ and $\\odot C$ are 10, 30 and 10 units, respectively. Find YW if $\\overline{A Z} \\cong \\overline{C W}$ and $C W=2$.", "answer": "3", "origin_answer": "3"}
+{"image": "data/geometry3k-images/test_269.png", "query": "Find $m\\angle MPQ$.", "answer": "101", "origin_answer": "101"}
+{"image": "data/geometry3k-images/test_270.png", "query": "Find x to the nearest hundredth.", "answer": "43.86", "origin_answer": "43.86"}
+{"image": "data/geometry3k-images/test_271.png", "query": "Find x", "answer": "10.5", "origin_answer": "10.5"}
+{"image": "data/geometry3k-images/test_272.png", "query": "Find $\\angle 9$", "answer": "120", "origin_answer": "120"}
+{"image": "data/geometry3k-images/test_273.png", "query": "Find $x$.", "answer": "9.6", "origin_answer": "9.6"}
+{"image": "data/geometry3k-images/test_274.png", "query": "Find z.", "answer": "6*(5**0.5)", "origin_answer": "6 \\sqrt { 5 }"}
+{"image": "data/geometry3k-images/test_275.png", "query": "Use rectangle LMNP, parallelogram LKMJ to solve the problem.\r\nIf $L N=10, L J=2 x+1,$ and $P J=3 x-1,$ find $x$", "answer": "2", "origin_answer": "2"}
+{"image": "data/geometry3k-images/test_276.png", "query": "In $\\odot P$, $JK=10$ and $\\widehat {JKL}=134$. Find $m \\widehat{JL}$.", "answer": "67", "origin_answer": "67"}
+{"image": "data/geometry3k-images/test_277.png", "query": "Find $m \\angle N C L$", "answer": "120", "origin_answer": "120"}
+{"image": "data/geometry3k-images/test_278.png", "query": "Find $m \\angle 1$.", "answer": "79", "origin_answer": "79"}
+{"image": "data/geometry3k-images/test_279.png", "query": "The pair of polygons is similar. Find x", "answer": "6", "origin_answer": "6"}
+{"image": "data/geometry3k-images/test_280.png", "query": "$m \\angle 3=x-12$ and $m \\angle 6=72$. Find $x$.", "answer": "84", "origin_answer": "84"}
+{"image": "data/geometry3k-images/test_281.png", "query": "Find the perimeter of  $\\triangle D E F,$ if $\\triangle D E F \\sim \\triangle C B F,$ perimeter of $\\triangle C B F=27, D F=6,$ and $F C=8$", "answer": "20.25", "origin_answer": "20.25"}
+{"image": "data/geometry3k-images/test_282.png", "query": "Find $TQ$.", "answer": "12", "origin_answer": "12"}
+{"image": "data/geometry3k-images/test_283.png", "query": "Quadrilateral ABCD is a rectangle. $m\\angle 2 = 40$. Find $m \\angle 3$", "answer": "40", "origin_answer": "40"}
+{"image": "data/geometry3k-images/test_284.png", "query": "Find $h$ in the triangle.", "answer": "8", "origin_answer": "8"}
+{"image": "data/geometry3k-images/test_285.png", "query": "The diameters of $\\odot A, \\odot B,$ and $\\odot C$ are 10, 30 and 10 units, respectively. Find AC if $\\overline{A Z} \\cong \\overline{C W}$ and $C W=2$.", "answer": "34", "origin_answer": "34"}
+{"image": "data/geometry3k-images/test_286.png", "query": "Find $m∠1$.", "answer": "53", "origin_answer": "53"}
+{"image": "data/geometry3k-images/test_287.png", "query": "In rhombus $A B C D, m \\angle D A B=2, m \\angle A D C$ and $C B=6$. Find $m \\angle A D B$", "answer": "30", "origin_answer": "30"}
+{"image": "data/geometry3k-images/test_288.png", "query": "$\\overline{WTY} \\cong \\overline{TWY}$. Find $x$.", "answer": "5", "origin_answer": "5"}
+{"image": "data/geometry3k-images/test_289.png", "query": "Quadrilateral $WXYZ$ is a rectangle. Find the measure of $\\angle 6$ if $m∠1 = 30$.", "answer": "60", "origin_answer": "60"}
+{"image": "data/geometry3k-images/test_290.png", "query": "In $\\odot Z, \\angle W Z X \\cong \\angle X Z Y, m \\angle V Z U=4 x$, $m \\angle U Z Y=2 x+24,$ and $\\overline{V Y}$ and $\\overline{W U}$ are diameters.\r\nFind $m\\widehat{W U X}$", "answer": "308", "origin_answer": "308"}
+{"image": "data/geometry3k-images/test_291.png", "query": "Find x.", "answer": "10", "origin_answer": "10"}
+{"image": "data/geometry3k-images/test_292.png", "query": "Find x. Assume that segments that appear to be tangent are tangent. Round to the nearest tenth if necessary.", "answer": "10", "origin_answer": "10"}
+{"image": "data/geometry3k-images/test_293.png", "query": "Find the perimeter of the figure.", "answer": "32", "origin_answer": "32"}
+{"image": "data/geometry3k-images/test_294.png", "query": "Find the measure of the altitude drawn to the hypotenuse.", "answer": "(336**0.5)", "origin_answer": "\\sqrt { 336 }"}
+{"image": "data/geometry3k-images/test_295.png", "query": "Use parallelogram MNPR to find $m \\angle MNP$", "answer": "71", "origin_answer": "71"}
+{"image": "data/geometry3k-images/test_296.png", "query": "In the figure, $\\triangle A B C \\sim \\triangle D E F . \\overline{B G}$ is a median of $\\triangle A B C,$ and $\\overline{E H}$ is a median of $\\triangle D E F .$ Find $E H$ if $B C=30, B G=15,$ and $E F=15$", "answer": "7.5", "origin_answer": "7.5"}
+{"image": "data/geometry3k-images/test_297.png", "query": "Find x. Round to the nearest tenth if necessary. Assume that segments that appear\r\nto be tangent are tangent.", "answer": "2", "origin_answer": "2"}
+{"image": "data/geometry3k-images/test_298.png", "query": "Find $m \\angle Y$", "answer": "80", "origin_answer": "80"}
+{"image": "data/geometry3k-images/test_299.png", "query": "Equilateral pentagon $P Q R S T$ is inscribed in $\\odot U$. Find $m \\widehat{Q R}$", "answer": "72", "origin_answer": "72"}
+{"image": "data/geometry3k-images/test_300.png", "query": "In the figure, $m ∠9 = 75$. Find the measure of $\\angle 6$.", "answer": "105", "origin_answer": "105"}
+{"image": "data/geometry3k-images/test_301.png", "query": "Given that the perimeter of $\\triangle A B C=25,$ find $x$. Assume that segments that appear tangent to circles are tangent.", "answer": "3", "origin_answer": "3"}
+{"image": "data/geometry3k-images/test_302.png", "query": "$\\overline{HK}$ and $\\overline{IG}$ are diameters of $\\odot L$. Find $m \\widehat {IHJ}$.", "answer": "270", "origin_answer": "270"}
+{"image": "data/geometry3k-images/test_303.png", "query": "Find the scale factor from $W$ to $W'$.", "answer": "1/3", "origin_answer": "\\frac { 1 } { 3 }"}
+{"image": "data/geometry3k-images/test_304.png", "query": "Find x.", "answer": "(7**0.5)", "origin_answer": "\\sqrt { 7 }"}
+{"image": "data/geometry3k-images/test_305.png", "query": "Find tan X", "answer": "5/12", "origin_answer": "\\frac { 5 } { 12 }"}
+{"image": "data/geometry3k-images/test_306.png", "query": "Find the area of the parallelogram. Round to the nearest tenth if necessary.", "answer": "1440", "origin_answer": "1440"}
+{"image": "data/geometry3k-images/test_307.png", "query": "If $A B C D$ is a rhombus, and $m \\angle A B C=70^{\\circ}$, what is $m \\angle 1 ?$", "answer": "55", "origin_answer": "55"}
+{"image": "data/geometry3k-images/test_308.png", "query": "$MC=7,RM=4$, and $AT=16$. Find $MS$.", "answer": "3.5", "origin_answer": "3.5"}
+{"image": "data/geometry3k-images/test_309.png", "query": "For trapezoid $ABCD$, $S$ and $T$ are midpoints of the legs. If $CD=14$, $ST=10$, and $AB=2x$, find $x$.", "answer": "3", "origin_answer": "3"}
+{"image": "data/geometry3k-images/test_310.png", "query": "Find $m \\angle 4$.", "answer": "71.5", "origin_answer": "71.5"}
+{"image": "data/geometry3k-images/test_311.png", "query": "Circles $G, J,$ and $K$ all intersect at $L$ If $G H=10$, find FH", "answer": "20", "origin_answer": "20"}
+{"image": "data/geometry3k-images/test_312.png", "query": "Find DE", "answer": "10", "origin_answer": "10"}
+{"image": "data/geometry3k-images/test_313.png", "query": "$\\triangle ABC \\sim \\triangle FDG$. Find the value of $x$.", "answer": "10", "origin_answer": "10"}
+{"image": "data/geometry3k-images/test_314.png", "query": "Find x. Assume that segments that appear to be tangent are tangent.", "answer": "5", "origin_answer": "5"}
+{"image": "data/geometry3k-images/test_315.png", "query": "For trapezoid QRTU, V and S are midpoints of the legs. If QR = 4 and UT = 16, find VS.", "answer": "10", "origin_answer": "10"}
+{"image": "data/geometry3k-images/test_316.png", "query": "Find z", "answer": "36*(7**0.5)", "origin_answer": "36 \\sqrt { 7 }"}
+{"image": "data/geometry3k-images/test_317.png", "query": "Lines $l$, $m$, and $n$ are perpendicular bisectors of $\\triangle PQR$ and meet at $T$. If $TQ = 2x$, $PT = 3y - 1$, and $TR = 8$, find $z$.", "answer": "3", "origin_answer": "3"}
+{"image": "data/geometry3k-images/test_318.png", "query": "Use parallelogram JKLM to find $m \\angle JML$", "answer": "109", "origin_answer": "109"}
+{"image": "data/geometry3k-images/test_319.png", "query": "Find $x$.", "answer": "12.75", "origin_answer": "12.75"}
+{"image": "data/geometry3k-images/test_320.png", "query": "Find $\\angle C$ of quadrilateral ABCD", "answer": "90", "origin_answer": "90"}
+{"image": "data/geometry3k-images/test_321.png", "query": "$P Q R S$ is a rhombus inscribed in a circle. Find $m \\widehat{SP}$ ", "answer": "90", "origin_answer": "90"}
+{"image": "data/geometry3k-images/test_322.png", "query": "Find the variable of $x$ to the nearest tenth. Assume that segments that appear to be tangent are tangent.", "answer": "6.0", "origin_answer": "6.0"}
+{"image": "data/geometry3k-images/test_323.png", "query": "The segment is tangent to the circle. Find $x$. Round to the nearest tenth.", "answer": "8.5", "origin_answer": "8.5"}
+{"image": "data/geometry3k-images/test_324.png", "query": "Find $x$.", "answer": "16", "origin_answer": "16"}
+{"image": "data/geometry3k-images/test_325.png", "query": "If $ST=8, TR=4$, and $PT=6$, find $QR$.", "answer": "9", "origin_answer": "9"}
+{"image": "data/geometry3k-images/test_326.png", "query": "Find the value of $x$ in each diagram", "answer": "71", "origin_answer": "71"}
+{"image": "data/geometry3k-images/test_327.png", "query": "$m \\angle 2=2 x, m \\angle 3=x$ Find $m\\angle 2$", "answer": "60", "origin_answer": "60"}
+{"image": "data/geometry3k-images/test_328.png", "query": "Find the perimeter of the parallelogram. Round to the nearest tenth if necessary.", "answer": "76", "origin_answer": "76"}
+{"image": "data/geometry3k-images/test_329.png", "query": "$\\triangle JKL \\sim \\triangle WYZ$. Find $x$.", "answer": "21", "origin_answer": "21"}
+{"image": "data/geometry3k-images/test_330.png", "query": "Find $KL$.", "answer": "12", "origin_answer": "12"}
+{"image": "data/geometry3k-images/test_331.png", "query": "Find $QS$.", "answer": "25", "origin_answer": "25"}
+{"image": "data/geometry3k-images/test_332.png", "query": "parallelogram MNPQ with $m \\angle M=10 x$ and $m \\angle N=20 x$, find $\\angle M$", "answer": "60", "origin_answer": "60"}
+{"image": "data/geometry3k-images/test_333.png", "query": "Find $x$.", "answer": "90", "origin_answer": "90"}
+{"image": "data/geometry3k-images/test_334.png", "query": "Find y.", "answer": "2*(6**0.5)", "origin_answer": "2 \\sqrt { 6 }"}
+{"image": "data/geometry3k-images/test_335.png", "query": "$\\overline{AB} \\perp \\overline{DC}$ and $\\overline{GH} \\perp \\overline{FE}$.\r\nIf $\\triangle ACD \\sim \\triangle GEF$, find $AB$.", "answer": "2.2", "origin_answer": "2.2"}
+{"image": "data/geometry3k-images/test_336.png", "query": "Find $JQ$ if $Q$ is the incenter of $\\triangle JLN$.  Rounded to the nearest hundredth.", "answer": "18.79", "origin_answer": "18.79"}
+{"image": "data/geometry3k-images/test_337.png", "query": "If $FGHJ$ is a kite, find $m\\angle GFJ$.", "answer": "80", "origin_answer": "80"}
+{"image": "data/geometry3k-images/test_338.png", "query": "Find $x$ so that $m || n$.", "answer": "20", "origin_answer": "20"}
+{"image": "data/geometry3k-images/test_339.png", "query": "Find x.", "answer": "2*(11**0.5)", "origin_answer": "2 \\sqrt { 11 }"}
+{"image": "data/geometry3k-images/test_340.png", "query": "For the pair of similar figures, use the given areas to find the scale factor from the blue to the green figure.", "answer": "1/2", "origin_answer": "\\frac { 1 } { 2 }"}
+{"image": "data/geometry3k-images/test_341.png", "query": "Find the value of the variable $y$ in the figure.", "answer": "10", "origin_answer": "10"}
+{"image": "data/geometry3k-images/test_342.png", "query": "Find $m \\widehat {XZ}$.", "answer": "88", "origin_answer": "88"}
+{"image": "data/geometry3k-images/test_343.png", "query": "Express the ratio of $\\tan M$ as a decimal to the nearest hundredth.", "answer": "0.42", "origin_answer": "0.42"}
+{"image": "data/geometry3k-images/test_344.png", "query": "Express the ratio of $\\tan L$ as a decimal to the nearest hundredth.", "answer": "0.42", "origin_answer": "0.42"}
+{"image": "data/geometry3k-images/test_345.png", "query": "In $\\odot S$, $m \\widehat {PQR}=98$, Find $m \\widehat {PQ}$.", "answer": "49", "origin_answer": "49"}
+{"image": "data/geometry3k-images/test_346.png", "query": "Find $h$ in each triangle.", "answer": "11", "origin_answer": "11"}
+{"image": "data/geometry3k-images/test_347.png", "query": "Find x", "answer": "93", "origin_answer": "93"}
+{"image": "data/geometry3k-images/test_348.png", "query": "$m \\angle 4=2 y+32$ and $m \\angle 5=3 y-3$. Find $y$.", "answer": "35", "origin_answer": "35"}
+{"image": "data/geometry3k-images/test_349.png", "query": "In the figure, square $ABDC$ is inscribed in $\\odot K$. Find the measure of a central angle.", "answer": "90", "origin_answer": "90"}
+{"image": "data/geometry3k-images/test_350.png", "query": "Circle $J$ has a radius of $10$ units, $\\odot K$ has a radius of $8$ units, and $BC=5.4$ units. Find $CK$.", "answer": "2.6", "origin_answer": "2.6"}
+{"image": "data/geometry3k-images/test_351.png", "query": "Find $x$ so that the quadrilateral is a parallelogram.", "answer": "5", "origin_answer": "5"}
+{"image": "data/geometry3k-images/test_352.png", "query": "Find x.", "answer": "14", "origin_answer": "14"}
+{"image": "data/geometry3k-images/test_353.png", "query": "Find x. Assume that segments that appear to be tangent are tangent.", "answer": "14/3", "origin_answer": "\\frac { 14 } { 3 }"}
+{"image": "data/geometry3k-images/test_354.png", "query": "Find x. Round to the nearest hundredth.", "answer": "27.44", "origin_answer": "27.44"}
+{"image": "data/geometry3k-images/test_355.png", "query": "In $\\odot M$, $FL=24,HJ=48$, and $m \\widehat {HP}=65$. Find $NJ$.", "answer": "24", "origin_answer": "24"}
+{"image": "data/geometry3k-images/test_356.png", "query": "Find the length of $AC$ in the isosceles triangle ABC. ", "answer": "7", "origin_answer": "7"}
+{"image": "data/geometry3k-images/test_357.png", "query": "Find $m \\angle D$.", "answer": "80", "origin_answer": "80"}
+{"image": "data/geometry3k-images/test_358.png", "query": "The degree measures of minor arc $\\widehat{A C}$ and major arc $\\widehat{A D C}$ are $x$ and $y$ respectively. If $m∠ABC = 70°$, find $x$.", "answer": "110", "origin_answer": "110"}
+{"image": "data/geometry3k-images/test_359.png", "query": "Circles $G, J,$ and $K$ all intersect at $L$ If $G H=10,$ find each measure.\r\nFind JL", "answer": "5", "origin_answer": "5"}
+{"image": "data/geometry3k-images/test_360.png", "query": "Quadrilateral DEFG is a rectangle. If $m\\angle EDF = 5x - 3$ and $m\\angle DFG = 3x + 7$, find $m\\angle EDF$.", "answer": "22", "origin_answer": "22"}
+{"image": "data/geometry3k-images/test_361.png", "query": "Find the area of the figure.", "answer": "120", "origin_answer": "120"}
+{"image": "data/geometry3k-images/test_362.png", "query": "Find z", "answer": "40/3", "origin_answer": "\\frac { 40 } { 3 }"}
+{"image": "data/geometry3k-images/test_363.png", "query": "Find $m \\angle B$.", "answer": "61", "origin_answer": "61"}
+{"image": "data/geometry3k-images/test_364.png", "query": "For trapezoid $Q R S T, A$ and $B$ are midpoints of the legs. Find $m \\angle S$", "answer": "135", "origin_answer": "135"}
+{"image": "data/geometry3k-images/test_365.png", "query": "If $CE=t-2$. $EB=t+1$, $CD=2$, and $CA=10$, find $CE$.", "answer": "1", "origin_answer": "1"}
+{"image": "data/geometry3k-images/test_366.png", "query": "Use parallelogram MNPR to find $m \\angle RNP$", "answer": "38", "origin_answer": "38"}
+{"image": "data/geometry3k-images/test_367.png", "query": "Find $x$. Assume that segments that appear to be tangent are tangent.", "answer": "6", "origin_answer": "6"}
+{"image": "data/geometry3k-images/test_368.png", "query": "Find the measure of $\\angle 3$ in the figure.", "answer": "68", "origin_answer": "68"}
+{"image": "data/geometry3k-images/test_369.png", "query": "$\\triangle LMN \\cong \\triangle QRS$. Find $x$.", "answer": "5", "origin_answer": "5"}
+{"image": "data/geometry3k-images/test_370.png", "query": "Find the area of the triangle. Round to the nearest tenth if necessary.", "answer": "54", "origin_answer": "54"}
+{"image": "data/geometry3k-images/test_371.png", "query": "$\\triangle RST \\cong \\triangle ABC$. Find $x$.", "answer": "10", "origin_answer": "10"}
+{"image": "data/geometry3k-images/test_372.png", "query": "Find the area of the regular polygon. Round to the nearest tenth.", "answer": "23.4", "origin_answer": "23.4"}
+{"image": "data/geometry3k-images/test_373.png", "query": "Use parallelogram $ABCD$ to find $AD$", "answer": "18", "origin_answer": "18"}
+{"image": "data/geometry3k-images/test_374.png", "query": "Find the area of the parallelogram. Round to the nearest tenth if necessary.", "answer": "10.2", "origin_answer": "10.2"}
+{"image": "data/geometry3k-images/test_375.png", "query": "Trapezoid $GHJK$ has an area of 188.35 square feet. If $HJ$ is 16.5 feet, find $GK$.", "answer": "26.8", "origin_answer": "26.8"}
+{"image": "data/geometry3k-images/test_376.png", "query": "Which of the following facts would be sufficient to prove that line $d$ is parallel to $\\overline {XZ}$?", "answer": "∠3\\cong∠Z", "origin_answer": "\\angle 3 \\cong \\angle Z"}
+{"image": "data/geometry3k-images/test_377.png", "query": "If $LK=4,MP=3,PQ=6,KJ=2,RS=6$, and $LP=2$, find $ML$.", "answer": "2", "origin_answer": "2"}
+{"image": "data/geometry3k-images/test_378.png", "query": "Find x", "answer": "4*(6**0.5)", "origin_answer": "4 \\sqrt { 6 }"}
+{"image": "data/geometry3k-images/test_379.png", "query": "Find $x$. $A=148$ $m^2$. ", "answer": "18.5", "origin_answer": "18.5"}
+{"image": "data/geometry3k-images/test_380.png", "query": "ABCD is a parallelogram with side lengths as indicated in the figure at the right. The perimeter of ABCD is 22. Find AB", "answer": "7", "origin_answer": "7"}
+{"image": "data/geometry3k-images/test_381.png", "query": "Find x to the nearest tenth. Assume that segments that appear to be tangent are tangent.", "answer": "11.2", "origin_answer": "11.2"}
+{"image": "data/geometry3k-images/test_382.png", "query": "Find $x$.", "answer": "30", "origin_answer": "30"}
+{"image": "data/geometry3k-images/test_383.png", "query": "If $XM=4,XN=6$, and $NZ=9$, find $XY$.", "answer": "10", "origin_answer": "10"}
+{"image": "data/geometry3k-images/test_384.png", "query": "In $\\odot O, \\overline{E C}$ and $\\overline{A B}$ are diameters, and $\\angle B O D \\cong \\angle D O E \\cong \\angle E O F \\cong \\angle F O A$\r\nFind $m\\widehat{A C}$", "answer": "90", "origin_answer": "90"}
+{"image": "data/geometry3k-images/test_385.png", "query": "Find z.", "answer": "3*(19**0.5)", "origin_answer": "3 \\sqrt { 19 }"}
+{"image": "data/geometry3k-images/test_386.png", "query": "In $\\odot F, \\overline{F H} \\cong \\overline{F L}$ and $\\mathrm{FK}=17$.\r\nFind JG", "answer": "30", "origin_answer": "30"}
+{"image": "data/geometry3k-images/test_387.png", "query": "$\\overrightarrow{BA}$ and $\\overrightarrow{BC}$ are opposite rays and $\\overrightarrow{BD}$ bisects $\\angle ABF$. If $m \\angle FBC=2x+25$ and $m \\angle ABF=10x-1$, find $m \\angle DBF$.", "answer": "64.5", "origin_answer": "64.5"}
+{"image": "data/geometry3k-images/test_388.png", "query": "Find $XY$ of isosceles $\\triangle XYZ$", "answer": "7", "origin_answer": "7"}
+{"image": "data/geometry3k-images/test_389.png", "query": "Find $z$ in the given parallelogram", "answer": "4.5", "origin_answer": "4.5"}
+{"image": "data/geometry3k-images/test_390.png", "query": "$\\overline{MN} \\| \\overline{BC}$. Solve for $x$.", "answer": "9", "origin_answer": "9"}
+{"image": "data/geometry3k-images/test_391.png", "query": "Find y.", "answer": "28", "origin_answer": "28"}
+{"image": "data/geometry3k-images/test_392.png", "query": "Find the scale factor from $Q$ to $Q'$.", "answer": "3", "origin_answer": "3"}
+{"image": "data/geometry3k-images/test_393.png", "query": "$MC=7,RM=4$, and $AT = 16$. Find $MB$.", "answer": "8", "origin_answer": "8"}
+{"image": "data/geometry3k-images/test_394.png", "query": "Find the perimeter of $\\triangle B C D,$ if $\\triangle B C D \\sim \\triangle F D E, C D=12$, $F D=5, F E=4,$ and $D E=8$.", "answer": "25.5", "origin_answer": "25.5"}
+{"image": "data/geometry3k-images/test_395.png", "query": "In rhombus LMPQ, $m \\angle Q L M=2 x^{2}-10$, $m \\angle Q P M=8 x$,  and $M P=10$ . \r\nFind the perimeter of $LMPQ$", "answer": "40", "origin_answer": "40"}
+{"image": "data/geometry3k-images/test_396.png", "query": "Find $BD$ if $\\overline{B F}$ bisects $\\angle A B C$ and $\\overline{A C} \\| \\overline{E D}, B A=6, B C=7.5$, $A C=9,$ and $D E=9$", "answer": "13.5", "origin_answer": "13.5"}
+{"image": "data/geometry3k-images/test_397.png", "query": "Find y.", "answer": "12*(2**0.5)", "origin_answer": "12 \\sqrt { 2 }"}
+{"image": "data/geometry3k-images/test_398.png", "query": "Quadrilateral EFGH is a rectangle. If EF = 4x - 6 and HG = x + 3, find EF.", "answer": "6", "origin_answer": "6"}
+{"image": "data/geometry3k-images/test_399.png", "query": "Find $m \\angle R C M$", "answer": "43", "origin_answer": "43"}
+{"image": "data/geometry3k-images/test_400.png", "query": "Use parallelogram ABCD to find $m \\angle CDF $", "answer": "43", "origin_answer": "43"}
+{"image": "data/geometry3k-images/test_401.png", "query": "Point $D$ is the center of the circle. What is $m \\angle A B C ?$", "answer": "90", "origin_answer": "90"}
+{"image": "data/geometry3k-images/test_402.png", "query": "Find the measure of $\\angle 3$.", "answer": "95", "origin_answer": "95"}
+{"image": "data/geometry3k-images/test_403.png", "query": "Quadrilateral $WXYZ$ is a rectangle. Find the measure of $\\angle 3$ if $m∠1 = 30$.", "answer": "60", "origin_answer": "60"}
+{"image": "data/geometry3k-images/test_404.png", "query": "Find x. Assume that segments that appear to be tangent are tangent.", "answer": "4", "origin_answer": "4"}
+{"image": "data/geometry3k-images/test_405.png", "query": "Find $m \\angle 2$ if $m \\widehat{B C}=30$ and $m \\widehat{A D}=20$", "answer": "155", "origin_answer": "155"}
+{"image": "data/geometry3k-images/test_406.png", "query": "Find x. Assume that any segment that appears to be tangent is tangent.", "answer": "25", "origin_answer": "25"}
+{"image": "data/geometry3k-images/test_407.png", "query": "Find the area of the shaded region. Assume that all polygons that appear to be regular are regular. Round to the nearest tenth.", "answer": "56.9", "origin_answer": "56.9"}
+{"image": "data/geometry3k-images/test_408.png", "query": "Find x. Round to the nearest tenth.", "answer": "37.2", "origin_answer": "37.2"}
+{"image": "data/geometry3k-images/test_409.png", "query": "If RL = 5, RT = 9, and WS = 6, find RW.", "answer": "7.5", "origin_answer": "7.5"}
+{"image": "data/geometry3k-images/test_410.png", "query": "Find the measure of $\\angle AFB$ on $\\odot F$ with diameter $\\overline{AC} $.", "answer": "108", "origin_answer": "108"}
+{"image": "data/geometry3k-images/test_411.png", "query": "Find x.", "answer": "4*(6**0.5)", "origin_answer": "4 \\sqrt { 6 }"}
+{"image": "data/geometry3k-images/test_412.png", "query": "Find the area of the parallelogram. Round to the nearest tenth if necessary.", "answer": "207.8", "origin_answer": "207.8"}
+{"image": "data/geometry3k-images/test_413.png", "query": "Find the area of the parallelogram. Round to the nearest tenth if necessary.", "answer": "178.2", "origin_answer": "178.2"}
+{"image": "data/geometry3k-images/test_414.png", "query": "Find the area of the regular polygon figure. Round to the nearest tenth.", "answer": "65.0", "origin_answer": "65.0"}
+{"image": "data/geometry3k-images/test_415.png", "query": "A regular pentagon and a square share a mutual vertex $X$. The sides $\\overline{X Y}$ and $\\overline{X Z}$ are sides of a third regular polygon with a vertex at $X .$ How many sides does this polygon have?", "answer": "20", "origin_answer": "20"}
+{"image": "data/geometry3k-images/test_416.png", "query": "Find $x$ if $\\triangle JLM \\sim \\triangle QST$.", "answer": "1.5", "origin_answer": "1.5"}
+{"image": "data/geometry3k-images/test_417.png", "query": "$\\triangle WXY \\cong \\triangle WXZ$. Find $y$.", "answer": "4", "origin_answer": "4"}
+{"image": "data/geometry3k-images/test_418.png", "query": "Polygon ABCD ~ polygon AEFG, $m\\angle AGF = 108$, GF = 14, AD = 12, DG = 4.5, EF = 8, and AB = 26.\r\nFind $m\\angle ADC$", "answer": "108", "origin_answer": "108"}
+{"image": "data/geometry3k-images/test_419.png", "query": "Find the measure of $\\angle 3$ if $m∠4= m∠5$.", "answer": "116", "origin_answer": "116"}
+{"image": "data/geometry3k-images/test_420.png", "query": "Use parallelogram MNPR to find $x$", "answer": "8", "origin_answer": "8"}
+{"image": "data/geometry3k-images/test_421.png", "query": "The segment is tangent to the circle. Find $x$.", "answer": "16", "origin_answer": "16"}
+{"image": "data/geometry3k-images/test_422.png", "query": "JKLM is a rectangle. MLPR is a rhombus. $\\angle J M K \\cong \\angle R M P$, $m \\angle J M K=55, \\text { and } m \\angle M R P=70 . Find $m \\angle K M L$", "answer": "35", "origin_answer": "35"}
+{"image": "data/geometry3k-images/test_423.png", "query": "Quadrilateral ABCD is a rectangle. $m\\angle 2 = 40$. Find $m \\angle 8$", "answer": "100", "origin_answer": "100"}
+{"image": "data/geometry3k-images/test_424.png", "query": "Find $m \\angle 3$.", "answer": "38", "origin_answer": "38"}
+{"image": "data/geometry3k-images/test_425.png", "query": "Find y.", "answer": "8*(3**0.5)", "origin_answer": "8 \\sqrt { 3 }"}
+{"image": "data/geometry3k-images/test_426.png", "query": "Each pair of polygons is similar. Find AC", "answer": "7.6", "origin_answer": "7.6"}
+{"image": "data/geometry3k-images/test_427.png", "query": "$\\odot  P \\cong \\odot Q$, Find $x$.", "answer": "11", "origin_answer": "11"}
+{"image": "data/geometry3k-images/test_428.png", "query": "$\\overline{AD}$ and $\\overline{CG}$ are diameters of $\\odot B$. Find $m \\widehat {AG}$.", "answer": "55", "origin_answer": "55"}
+{"image": "data/geometry3k-images/test_429.png", "query": "Refer to the triangle shown below. Find $y$ to the nearest tenth.", "answer": "2*(41**0.5)", "origin_answer": "2 \\sqrt { 41 }"}
+{"image": "data/geometry3k-images/test_430.png", "query": "Find $PN$.", "answer": "30", "origin_answer": "30"}
+{"image": "data/geometry3k-images/test_431.png", "query": "Find $m \\angle A B C$\r\nif $m \\angle C D A=61$", "answer": "140", "origin_answer": "140"}
+{"image": "data/geometry3k-images/test_432.png", "query": "Find $m\\angle 2$", "answer": "90", "origin_answer": "90"}
+{"image": "data/geometry3k-images/test_433.png", "query": "The diagonals of rhombus FGHJ intersect at K. If $GH = x + 9$ and $JH = 5x - 2$, find $x$.", "answer": "2.75", "origin_answer": "2.75"}
+{"image": "data/geometry3k-images/test_434.png", "query": "$\\triangle RSV \\cong \\triangle TVS$. Find $x$.", "answer": "12", "origin_answer": "12"}
+{"image": "data/geometry3k-images/test_435.png", "query": "In $\\odot M$, $FL=24,HJ=48$, and $m \\widehat {HP}=65$. Find $m \\widehat {HJ}$.", "answer": "130", "origin_answer": "130"}
+{"image": "data/geometry3k-images/test_436.png", "query": "Find x. Round to the nearest tenth.", "answer": "17.4", "origin_answer": "17.4"}
+{"image": "data/geometry3k-images/test_437.png", "query": "If $\\frac{I J}{X J}=\\frac{HJ}{YJ}, m \\angle W X J=130$\r\nand $m \\angle WZG=20,$ find $m \\angle J$", "answer": "60", "origin_answer": "60"}
+{"image": "data/geometry3k-images/test_438.png", "query": "The ratio of the measures of the angles of the triangle below is 3 : 2 : 1. Which of the following is not an angle measure of the triangle?", "answer": "45", "origin_answer": "45"}
+{"image": "data/geometry3k-images/test_439.png", "query": "Find $G I$ if $G H=9, G K=6,$ and $K J=4$", "answer": "15", "origin_answer": "15"}
+{"image": "data/geometry3k-images/test_440.png", "query": "Find $AB$.", "answer": "6.25", "origin_answer": "6.25"}
+{"image": "data/geometry3k-images/test_441.png", "query": "In the figure, a regular polygon is inscribed in a circle. Find the measure of a central angle.", "answer": "60", "origin_answer": "60"}
+{"image": "data/geometry3k-images/test_442.png", "query": "In rhombus $A B C D, A B=2 x+3$ and $B C=5 x$. Find AD.", "answer": "5", "origin_answer": "5"}
+{"image": "data/geometry3k-images/test_443.png", "query": "In the figure, $m∠3 = 110$ and $m ∠ 12 = 55$. Find the measure of $∠1$.", "answer": "110", "origin_answer": "110"}
+{"image": "data/geometry3k-images/test_444.png", "query": "Quadrilateral $WXYZ$ is a rectangle. Find the measure of $\\angle 5$ if $m∠1 = 30$.", "answer": "30", "origin_answer": "30"}
+{"image": "data/geometry3k-images/test_445.png", "query": "Each pair of polygons is similar. Find GF", "answer": "7.5", "origin_answer": "7.5"}
+{"image": "data/geometry3k-images/test_446.png", "query": "$a=14, b=48,$ and $c=50$ find $sinA$", "answer": "0.28", "origin_answer": "0.28"}
+{"image": "data/geometry3k-images/test_447.png", "query": "Find x", "answer": "10*(3**0.5)", "origin_answer": "10 \\sqrt { 3 }"}
+{"image": "data/geometry3k-images/test_448.png", "query": "Find $m \\angle JKL$.", "answer": "37", "origin_answer": "37"}
+{"image": "data/geometry3k-images/test_449.png", "query": "Find $m \\widehat {JKL}$.", "answer": "232", "origin_answer": "232"}
+{"image": "data/geometry3k-images/test_450.png", "query": "Find the area of the kite.", "answer": "336", "origin_answer": "336"}
+{"image": "data/geometry3k-images/test_451.png", "query": "Find the area of the figure in feet. Round to the nearest tenth, if necessary.", "answer": "34.6", "origin_answer": "34.6"}
+{"image": "data/geometry3k-images/test_452.png", "query": "Find $x$.", "answer": "97/6", "origin_answer": "\\frac { 97 } { 6 }"}
+{"image": "data/geometry3k-images/test_453.png", "query": "In $\\odot F, m \\angle D F A=50$ and $\\overline{C F} \\perp \\overline{F B}$. Find $m \\widehat{A C E}$", "answer": "230", "origin_answer": "230"}
+{"image": "data/geometry3k-images/test_454.png", "query": "Find x", "answer": "8*(3**0.5)", "origin_answer": "8 \\sqrt { 3 }"}
+{"image": "data/geometry3k-images/test_455.png", "query": "Find the area of the trapezoid.", "answer": "132", "origin_answer": "132"}
+{"image": "data/geometry3k-images/test_456.png", "query": "Find the area of the shaded region. Assume that the polygon is regular unless otherwise stated. Round to the nearest tenth.", "answer": "1208.1", "origin_answer": "1208.1"}
+{"image": "data/geometry3k-images/test_457.png", "query": "If $PR \\parallel  KL$, KN = 9, LN = 16, PM = 2 KP, find PR", "answer": "50/3", "origin_answer": "\\frac { 50 } { 3 }"}
+{"image": "data/geometry3k-images/test_458.png", "query": "Find $m \\angle CAD$.", "answer": "44", "origin_answer": "44"}
+{"image": "data/geometry3k-images/test_459.png", "query": "The rectangle is inscribed into the circle. Find the exact circumference of the circle.", "answer": "10π", "origin_answer": "10 \\pi"}
+{"image": "data/geometry3k-images/test_460.png", "query": "Find x. Assume that segments that appear to be tangent are tangent.", "answer": "12", "origin_answer": "12"}
+{"image": "data/geometry3k-images/test_461.png", "query": "Find $x$.", "answer": "5", "origin_answer": "5"}
+{"image": "data/geometry3k-images/test_462.png", "query": "The diameter of $\\odot S$ is $30$ units, the diameter of $\\odot R$ is $20$ units, and $DS=9$ units. Find $RC$.", "answer": "4", "origin_answer": "4"}
+{"image": "data/geometry3k-images/test_463.png", "query": "Find the area of the figure. Round to the nearest tenth.", "answer": "28.3", "origin_answer": "28.3"}
+{"image": "data/geometry3k-images/test_464.png", "query": "In $\\odot M$, $FL=24,HJ=48$, and $m \\widehat {HP}=65$. Find $m \\widehat {PJ}$.", "answer": "65", "origin_answer": "65"}
+{"image": "data/geometry3k-images/test_465.png", "query": "$\\overline{AB}$ is a diameter, $AC=8$ inches, and $BC=15$ inches. Find the circumference of the circle.", "answer": "17π", "origin_answer": "17 \\pi"}
+{"image": "data/geometry3k-images/test_466.png", "query": "Find $x$.", "answer": "70", "origin_answer": "70"}
+{"image": "data/geometry3k-images/test_467.png", "query": "Find $x$.", "answer": "65", "origin_answer": "65"}
+{"image": "data/geometry3k-images/test_468.png", "query": "$m \\angle BAC=38$, $BC=5$, and $DC=5$, find $m \\angle DAC$.", "answer": "38", "origin_answer": "38"}
+{"image": "data/geometry3k-images/test_469.png", "query": "JKLM is a rectangle. MLPR is a rhombus. $\\angle J M K \\cong \\angle R M P$, $m \\angle J M K=55, \\text { and } m \\angle M R P=70 . Find $m \\angle K L P$", "answer": "160", "origin_answer": "160"}
+{"image": "data/geometry3k-images/test_470.png", "query": "In $\\odot P$, the radius is $2$ inches, find the length of $\\widehat {RS}$. Round to the nearest hundredth.", "answer": "4.54", "origin_answer": "4.54"}
+{"image": "data/geometry3k-images/test_471.png", "query": "Find the perimeter of $\\triangle W Z X$, if $\\triangle W Z X \\sim \\triangle S R T, S T=6$, $W X=5,$ and the perimeter of $\\triangle S R T=15$.", "answer": "12.5", "origin_answer": "12.5"}
+{"image": "data/geometry3k-images/test_472.png", "query": "Equilateral pentagon $P Q R S T$ is inscribed in $\\odot U$.\r\nFind $m \\angle P S R$", "answer": "72", "origin_answer": "72"}
+{"image": "data/geometry3k-images/test_473.png", "query": "$\\overline{EB} \\| \\overline{DC}$. Find $AB$.", "answer": "7.5", "origin_answer": "7.5"}
+{"image": "data/geometry3k-images/test_474.png", "query": "Quadrilateral ABCD is a rectangle. Find x", "answer": "12", "origin_answer": "12"}
+{"image": "data/geometry3k-images/test_475.png", "query": "Express the ratio of $\\cos P$ as a decimal to the nearest hundredth.", "answer": "0.47", "origin_answer": "0.47"}
+{"image": "data/geometry3k-images/test_476.png", "query": "Find the area of the shaded sector. Round to the nearest tenth.", "answer": "1.8", "origin_answer": "1.8"}
+{"image": "data/geometry3k-images/test_477.png", "query": "Find y. Round to the nearest tenth, if necessary.", "answer": "7.4", "origin_answer": "7.4"}
+{"image": "data/geometry3k-images/test_478.png", "query": "$Q$ is the centroid and $BE=9$. Find $BQ$.", "answer": "6", "origin_answer": "6"}
+{"image": "data/geometry3k-images/test_479.png", "query": "Find the measure of $\\angle CFD$ on $\\odot F$ with diameter $\\overline{AC} $.", "answer": "123", "origin_answer": "123"}
+{"image": "data/geometry3k-images/test_480.png", "query": "Find x.", "answer": "33*(3**0.5)", "origin_answer": "33 \\sqrt { 3 }"}
+{"image": "data/geometry3k-images/test_481.png", "query": "Find the perimeter of $\\triangle R U W$ if $\\triangle R U W \\sim \\triangle S T V$, $S T=24, V S=12, V T=18$ and $U W=21$", "answer": "63", "origin_answer": "63"}
+{"image": "data/geometry3k-images/test_482.png", "query": "Find the perimeter of the parallelogram. Round to the nearest tenth if necessary.", "answer": "44", "origin_answer": "44"}
+{"image": "data/geometry3k-images/test_483.png", "query": "Find x. Assume that segments that appear to be tangent are tangent.", "answer": "2", "origin_answer": "2"}
+{"image": "data/geometry3k-images/test_484.png", "query": "Use a Pythagorean Triple to find x.", "answer": "70", "origin_answer": "70"}
+{"image": "data/geometry3k-images/test_485.png", "query": "Find the area of the parallelogram.", "answer": "552", "origin_answer": "552"}
+{"image": "data/geometry3k-images/test_486.png", "query": "Find $x$.", "answer": "12.5", "origin_answer": "12.5"}
+{"image": "data/geometry3k-images/test_487.png", "query": "Find $m\\angle R$", "answer": "58", "origin_answer": "58"}
+{"image": "data/geometry3k-images/test_488.png", "query": "Find x. Round to the nearest hundredth.", "answer": "16.64", "origin_answer": "16.64"}
+{"image": "data/geometry3k-images/test_489.png", "query": "What is the area of $▱ ABCD$?", "answer": "48", "origin_answer": "48"}
+{"image": "data/geometry3k-images/test_490.png", "query": "Find the area of the parallelogram. Round to the nearest tenth if necessary.", "answer": "180", "origin_answer": "180"}
+{"image": "data/geometry3k-images/test_491.png", "query": "Use a calculator to find the measure of $∠J$ to the nearest degree.", "answer": "40", "origin_answer": "40"}
+{"image": "data/geometry3k-images/test_492.png", "query": "Find y", "answer": "6*(2**0.5)", "origin_answer": "6 \\sqrt { 2 }"}
+{"image": "data/geometry3k-images/test_493.png", "query": "Find x.", "answer": "4*(2**0.5)", "origin_answer": "4 \\sqrt { 2 }"}
+{"image": "data/geometry3k-images/test_494.png", "query": "Each pair of polygons is similar. Find x", "answer": "8", "origin_answer": "8"}
+{"image": "data/geometry3k-images/test_495.png", "query": "In the figure, $m∠1 = 50$ and $m∠3 = 60$. Find the measure of $\\angle 4$.", "answer": "50", "origin_answer": "50"}
+{"image": "data/geometry3k-images/test_496.png", "query": "Find $KL$.", "answer": "12", "origin_answer": "12"}
+{"image": "data/geometry3k-images/test_497.png", "query": "Use parallelogram ABCD to find $m\\angle DAB$", "answer": "101", "origin_answer": "101"}
+{"image": "data/geometry3k-images/test_498.png", "query": "Find $m \\angle ABC$.", "answer": "51", "origin_answer": "51"}
+{"image": "data/geometry3k-images/test_499.png", "query": "Find BC", "answer": "4", "origin_answer": "4"}
+{"image": "data/geometry3k-images/test_500.png", "query": "Find the area of the parallelogram. Round to the nearest tenth if necessary.", "answer": "528", "origin_answer": "528"}
+{"image": "data/geometry3k-images/test_501.png", "query": "$UJ=9, VJ=3$, and $ZT=18$. Find $SJ$.", "answer": "6", "origin_answer": "6"}
+{"image": "data/geometry3k-images/test_502.png", "query": "Find $x$.", "answer": "30", "origin_answer": "30"}
+{"image": "data/geometry3k-images/test_503.png", "query": "Find the measure of $\\angle 1$.", "answer": "65", "origin_answer": "65"}
+{"image": "data/geometry3k-images/test_504.png", "query": "Find the value of the variable t.", "answer": "5", "origin_answer": "5"}
+{"image": "data/geometry3k-images/test_505.png", "query": "Find $x$ so that the quadrilateral is a parallelogram.", "answer": "4", "origin_answer": "4"}
+{"image": "data/geometry3k-images/test_506.png", "query": "Find $AB$.", "answer": "23", "origin_answer": "23"}
+{"image": "data/geometry3k-images/test_507.png", "query": "Find $m \\angle 1$ in the figure.", "answer": "113", "origin_answer": "113"}
+{"image": "data/geometry3k-images/test_508.png", "query": "Quadrilateral ABCD is a rhombus. If $AB = 2x + 3$ and $BC = x + 7$, find $CD$.", "answer": "11", "origin_answer": "11"}
+{"image": "data/geometry3k-images/test_509.png", "query": "In the figure, KL is tangent to $\\odot M$ at K. Find the value of x.", "answer": "9.45", "origin_answer": "9.45"}
+{"image": "data/geometry3k-images/test_510.png", "query": "in $\\triangle XYZ$, $P$ is the centroid, $KP=3$, and $XJ=8$. Find $YJ$.", "answer": "8", "origin_answer": "8"}
+{"image": "data/geometry3k-images/test_511.png", "query": "Find $QM$.", "answer": "12", "origin_answer": "12"}
+{"image": "data/geometry3k-images/test_512.png", "query": "Find the area of the figure. Round to the nearest tenth if necessary.", "answer": "2256", "origin_answer": "2256"}
+{"image": "data/geometry3k-images/test_513.png", "query": "Find $m \\angle 6$", "answer": "35", "origin_answer": "35"}
+{"image": "data/geometry3k-images/test_514.png", "query": "If $LK=4,MP=3,PQ=6,KJ=2,RS=6$, and $LP=2$, find $JH$.", "answer": "4", "origin_answer": "4"}
+{"image": "data/geometry3k-images/test_515.png", "query": "Find $m\\angle V X W$", "answer": "65", "origin_answer": "65"}
+{"image": "data/geometry3k-images/test_516.png", "query": "In the figure, $m ∠1 = 58 $, $m ∠2 = 47 $, and $m ∠3 = 26 $. Find the measure of $∠5$.", "answer": "47", "origin_answer": "47"}
+{"image": "data/geometry3k-images/test_517.png", "query": "Quadrilateral $A B C D$ is inscribed in $\\odot Z$ such that $m \\angle B Z A=104, m \\widehat{C B}=94,$ and $\\overline{A B} \\| \\overline{D C} .$\r\nFind $m \\angle Z A C$", "answer": "9", "origin_answer": "9"}
+{"image": "data/geometry3k-images/test_518.png", "query": "Find $x$.", "answer": "22.5", "origin_answer": "22.5"}
+{"image": "data/geometry3k-images/test_519.png", "query": "Find $m \\angle 3$.", "answer": "66", "origin_answer": "66"}
+{"image": "data/geometry3k-images/test_520.png", "query": "Find $x$.", "answer": "1.4", "origin_answer": "1.4"}
+{"image": "data/geometry3k-images/test_521.png", "query": "Find y.", "answer": "16*(5**0.5)", "origin_answer": "16 \\sqrt { 5 }"}
+{"image": "data/geometry3k-images/test_522.png", "query": "Find the area of the rhombus.", "answer": "136", "origin_answer": "136"}
+{"image": "data/geometry3k-images/test_523.png", "query": "Find x. Round the angle measure to the nearest degree", "answer": "98", "origin_answer": "98"}
+{"image": "data/geometry3k-images/test_524.png", "query": "Find y", "answer": "6", "origin_answer": "6"}
+{"image": "data/geometry3k-images/test_525.png", "query": "Find $x$.", "answer": "4.5", "origin_answer": "4.5"}
+{"image": "data/geometry3k-images/test_526.png", "query": "Find $y$ so that the quadrilateral is a parallelogram", "answer": "14", "origin_answer": "14"}
+{"image": "data/geometry3k-images/test_527.png", "query": "Find y.", "answer": "\\frac{28\\sqrt3}{3}", "origin_answer": "\\frac { 28 \\sqrt 3 } { 3 }"}
+{"image": "data/geometry3k-images/test_528.png", "query": "$\\triangle BCD \\cong \\triangle WXY$. Find $x$.", "answer": "3", "origin_answer": "3"}
+{"image": "data/geometry3k-images/test_529.png", "query": "Quadrilateral $WXYZ$ is a rectangle. Find the measure of $\\angle 2$ if $m∠1 = 30$.", "answer": "60", "origin_answer": "60"}
+{"image": "data/geometry3k-images/test_530.png", "query": "Refer to the figure at the right. Find x.", "answer": "5.17", "origin_answer": "5.17"}
+{"image": "data/geometry3k-images/test_531.png", "query": "$m \\angle 2=2 x, m \\angle 3=x$ Find $m\\angle 3$", "answer": "30", "origin_answer": "30"}
+{"image": "data/geometry3k-images/test_532.png", "query": "Use parallelogram ABCD to find $m \\angle AFD $", "answer": "97", "origin_answer": "97"}
+{"image": "data/geometry3k-images/test_533.png", "query": "For the pair of similar figures, use the given areas to find $x$.", "answer": "8", "origin_answer": "8"}
+{"image": "data/geometry3k-images/test_534.png", "query": "The square is circumscribed to the circle. Find the exact circumference of the circle.", "answer": "14π", "origin_answer": "14 \\pi"}
+{"image": "data/geometry3k-images/test_535.png", "query": "In $\\odot R$, find $TV$. Round to the nearest hundredth.", "answer": "18.44", "origin_answer": "18.44"}
+{"image": "data/geometry3k-images/test_536.png", "query": "The area of trapezoid $JKLM$ is 138 square feet. The area of trapezoid $QRST$ is 5.52 square feet. If trapezoid $J K L M$ $ \\sim$ trapezoid $QRST$, find the value of $x$.", "answer": "1", "origin_answer": "1"}
+{"image": "data/geometry3k-images/test_537.png", "query": "Find $m \\angle Z$", "answer": "110", "origin_answer": "110"}
+{"image": "data/geometry3k-images/test_538.png", "query": "$\\Delta EFG$ is equilateral, and $\\overline{E H}$ bisects $\\angle E$. Find $m \\angle 2$.", "answer": "30", "origin_answer": "30"}
+{"image": "data/geometry3k-images/test_539.png", "query": "Circle $A$ has diameters $\\overline{D F}$ and $\\overline{P G}$\r\nIf $D F=10$, find $D A$", "answer": "5", "origin_answer": "5"}
+{"image": "data/geometry3k-images/test_540.png", "query": "Find the area of the triangle.", "answer": "285", "origin_answer": "285"}
+{"image": "data/geometry3k-images/test_541.png", "query": "Find the length of $\\widehat {JK}$. Round to the nearest hundredth.", "answer": "1.05", "origin_answer": "1.05"}
+{"image": "data/geometry3k-images/test_542.png", "query": "Triangle $LMN$ is equilateral, and $\\overline{MP}$ bisects $\\overline{LN}$. Find the measure of each side of $\\triangle LMN$.", "answer": "10", "origin_answer": "10"}
+{"image": "data/geometry3k-images/test_543.png", "query": "In the figure, $m∠4 = 101$. Find the measure of $\\angle 6$.", "answer": "101", "origin_answer": "101"}
+{"image": "data/geometry3k-images/test_544.png", "query": "In rhombus $A B C D, A B=2 x+3$ and $B C=5 x$. Find $m \\angle AEB$.", "answer": "90", "origin_answer": "90"}
+{"image": "data/geometry3k-images/test_545.png", "query": "If $\\frac{I J}{X J}=\\frac{HJ}{YJ}, m \\angle W X J=130$\r\nand $m \\angle WZG=20,$ find $m \\angle YIZ$", "answer": "50", "origin_answer": "50"}
+{"image": "data/geometry3k-images/test_546.png", "query": "Find x. Round to the nearest tenth if necessary. Assume that segments that appear\r\nto be tangent are tangent.", "answer": "5.6", "origin_answer": "5.6"}
+{"image": "data/geometry3k-images/test_547.png", "query": "Find $m \\angle B G E$", "answer": "60", "origin_answer": "60"}
+{"image": "data/geometry3k-images/test_548.png", "query": "In the figure, $\\overline{CP}$ is an altitude, $\\overline{CQ}$ is the angle bisector of $∠ACB$, and $R$ is the midpoint of $\\overline{AB}$. Find  $m∠ACQ$ if $m∠ACB=123-x$ and $m∠QCB = 42 + x$.", "answer": "55", "origin_answer": "55"}
+{"image": "data/geometry3k-images/test_549.png", "query": "Find x", "answer": "10*(3**0.5)", "origin_answer": "10 \\sqrt { 3 }"}
+{"image": "data/geometry3k-images/test_550.png", "query": "Find $m\\angle CAM$", "answer": "28", "origin_answer": "28"}
+{"image": "data/geometry3k-images/test_551.png", "query": "Triangle $LMN$ is equilateral, and $\\overline{MP}$ bisects $\\overline{LN}$. Find $y$.", "answer": "18", "origin_answer": "18"}
+{"image": "data/geometry3k-images/test_552.png", "query": "Find x in the figure.", "answer": "34", "origin_answer": "34"}
+{"image": "data/geometry3k-images/test_553.png", "query": "Find y", "answer": "23.4", "origin_answer": "23.4"}
+{"image": "data/geometry3k-images/test_554.png", "query": "Find the area of the shaded region. Round to the nearest tenth.", "answer": "10.7", "origin_answer": "10.7"}
+{"image": "data/geometry3k-images/test_555.png", "query": "Find x. Round to the nearest tenth.", "answer": "18.8", "origin_answer": "18.8"}
+{"image": "data/geometry3k-images/test_556.png", "query": "Find the measure of $\\angle 2$.", "answer": "28", "origin_answer": "28"}
+{"image": "data/geometry3k-images/test_557.png", "query": "Find the area of the rhombus.", "answer": "264", "origin_answer": "264"}
+{"image": "data/geometry3k-images/test_558.png", "query": "Find the value of x.", "answer": "23", "origin_answer": "23"}
+{"image": "data/geometry3k-images/test_559.png", "query": "Find the area of the parallelogram.", "answer": "315", "origin_answer": "315"}
+{"image": "data/geometry3k-images/test_560.png", "query": "$\\overrightarrow{QP}$ and $\\overrightarrow{QR}$ are opposite rays, and $\\overrightarrow{QT}$ bisects $\\angle SOR$. If $m \\angle SOR=6x+8$ and $m \\angle TOR=4x-14,$ find $m \\angle SQT$.", "answer": "58", "origin_answer": "58"}
+{"image": "data/geometry3k-images/test_561.png", "query": "Find $m\\angle W$", "answer": "76", "origin_answer": "76"}
+{"image": "data/geometry3k-images/test_562.png", "query": "Find the area of the trapezoid. ", "answer": "180", "origin_answer": "180"}
+{"image": "data/geometry3k-images/test_563.png", "query": "In $\\triangle CDF$, $K$ is the centroid and $DK=16$. Find $CD$.", "answer": "18", "origin_answer": "18"}
+{"image": "data/geometry3k-images/test_564.png", "query": "Find PQ", "answer": "6", "origin_answer": "6"}
+{"image": "data/geometry3k-images/test_565.png", "query": "Find the area of the parallelogram. Round to the nearest tenth if necessary.", "answer": "169.7", "origin_answer": "169.7"}
+{"image": "data/geometry3k-images/test_566.png", "query": " In RSTV, RS $=6, V T=3$ and $R X$ is twice the length of $X V .$ Find $X Y .$", "answer": "4", "origin_answer": "4"}
+{"image": "data/geometry3k-images/test_567.png", "query": "For trapezoid $ABCD$, $S$ and $T$ are midpoints of the legs. If $AB=x+4$, $CD=3x+2$, and $ST=9$, find $AB$.", "answer": "7", "origin_answer": "7"}
+{"image": "data/geometry3k-images/test_568.png", "query": "Find $x$ for the equilateral triangle $RST$ if $RS = x + 9$, $ST = 2x$, and $RT = 3x - 9$.", "answer": "9", "origin_answer": "9"}
+{"image": "data/geometry3k-images/test_569.png", "query": "Find x. Assume that any segment that appears to be tangent is tangent.", "answer": "10", "origin_answer": "10"}
+{"image": "data/geometry3k-images/test_570.png", "query": "$\\overline{EB} \\| \\overline{DC}$. Find $x$.", "answer": "9.5", "origin_answer": "9.5"}
+{"image": "data/geometry3k-images/test_571.png", "query": "Express the ratio of $\\cos X$ as a decimal to the nearest hundredth.", "answer": "0.28", "origin_answer": "0.28"}
+{"image": "data/geometry3k-images/test_572.png", "query": "In $\\odot X, A B=30, C D=30,$ and $m \\widehat{C Z}=40$\r\nFind ND", "answer": "15", "origin_answer": "15"}
+{"image": "data/geometry3k-images/test_573.png", "query": "Find z.", "answer": "3", "origin_answer": "3"}
+{"image": "data/geometry3k-images/test_574.png", "query": "If $CW=WF$ and $ED=30$, what is $DF$?", "answer": "15", "origin_answer": "15"}
+{"image": "data/geometry3k-images/test_575.png", "query": "A square is inscribed in a circle of area 18$\\pi$ square units. Find the length of a side of the square.", "answer": "6", "origin_answer": "6"}
+{"image": "data/geometry3k-images/test_576.png", "query": "Find the scale from $B$ to $B'$.", "answer": "4/3", "origin_answer": "\\frac { 4 } { 3 }"}
+{"image": "data/geometry3k-images/test_577.png", "query": "Find $m\\angle H$", "answer": "97", "origin_answer": "97"}
+{"image": "data/geometry3k-images/test_578.png", "query": "Find the area of the figure. Round to the nearest tenth if necessary.", "answer": "35.7", "origin_answer": "35.7"}
+{"image": "data/geometry3k-images/test_579.png", "query": "Find x. Round to the nearest tenth, if necessary.", "answer": "3", "origin_answer": "3"}
+{"image": "data/geometry3k-images/test_580.png", "query": "Find the area of the figure.", "answer": "60", "origin_answer": "60"}
+{"image": "data/geometry3k-images/test_581.png", "query": "Find the area of the figure.", "answer": "144", "origin_answer": "144"}
+{"image": "data/geometry3k-images/test_582.png", "query": "If $A E=m-2, E C=m+4$， $A D=4,$ and $A B=20,$ find $m$", "answer": "4", "origin_answer": "4"}
+{"image": "data/geometry3k-images/test_583.png", "query": "Find y", "answer": "5*(2**0.5)/2", "origin_answer": "\\frac { 5 \\sqrt { 2 } } { 2 }"}
+{"image": "data/geometry3k-images/test_584.png", "query": "Find the perimeter of the figure. Round to the nearest tenth if necessary.", "answer": "24", "origin_answer": "24"}
+{"image": "data/geometry3k-images/test_585.png", "query": "Find the measure of $\\angle 2$ if $\\overline{A B} \\perp \\overline{B C}$.", "answer": "68", "origin_answer": "68"}
+{"image": "data/geometry3k-images/test_586.png", "query": "Find x", "answer": "9.3", "origin_answer": "9.3"}
+{"image": "data/geometry3k-images/test_587.png", "query": "In $\\odot B$, $CE=13.5$. Find $BD$. Round to the nearest hundredth.", "answer": "4.29", "origin_answer": "4.29"}
+{"image": "data/geometry3k-images/test_588.png", "query": "If $\\overline{PR} \\| \\overline{KL}, KN=9, LN=16,$ and $PM=2KP$, find $KM$.", "answer": "15", "origin_answer": "15"}
+{"image": "data/geometry3k-images/test_589.png", "query": "Find $m \\angle ABC$.", "answer": "22", "origin_answer": "22"}
+{"image": "data/geometry3k-images/test_590.png", "query": "Express the ratio of $\\cos A$ as a decimal to the nearest hundredth.", "answer": "0.60", "origin_answer": "0.60"}
+{"image": "data/geometry3k-images/test_591.png", "query": "Find $AD$.", "answer": "7.5", "origin_answer": "7.5"}
+{"image": "data/geometry3k-images/test_592.png", "query": "$\\triangle LMN \\cong \\triangle QRS$. Find $x$.", "answer": "20", "origin_answer": "20"}
+{"image": "data/geometry3k-images/test_593.png", "query": "Find the circumference of the figure. Round to the nearest tenth.", "answer": "19.5", "origin_answer": "19.5"}
+{"image": "data/geometry3k-images/test_594.png", "query": "find $sinS$", "answer": "0.6", "origin_answer": "0.6"}
+{"image": "data/geometry3k-images/test_595.png", "query": "Find $BC$ if $AB=6, AF=8, BC=x, CD=y$, $DE=2y-3$, and $FE=x+\\frac{10}{3}$.", "answer": "10", "origin_answer": "10"}
+{"image": "data/geometry3k-images/test_596.png", "query": "Find $x$ so that each quadrilateral is a parallelogram.", "answer": "34", "origin_answer": "34"}
+{"image": "data/geometry3k-images/test_597.png", "query": "$P$ is the incenter of $\\triangle AEC$. Find $m \\angle DEP$.", "answer": "28.5", "origin_answer": "28.5"}
+{"image": "data/geometry3k-images/test_598.png", "query": "Find $x$.", "answer": "5", "origin_answer": "5"}
+{"image": "data/geometry3k-images/test_599.png", "query": "$m \\angle 4=42$. Find $m \\angle 7$.", "answer": "138", "origin_answer": "138"}
+{"image": "data/geometry3k-images/test_600.png", "query": "Find the measure of $∠Z$ to the nearest tenth.", "answer": "33.7", "origin_answer": "33.7"}
