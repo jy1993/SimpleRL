@@ -3,6 +3,8 @@ import json
 import torch.nn.functional as F
 from datasets import load_dataset
 import os
+import deepspeed
+from deepspeed.runtime.zero.partition_parameters import ZeroParamStatus
 
 def apply_chat_template(messages):
 	text = ''
@@ -150,3 +152,27 @@ def broadcast_object_list(object_list, src=0):
 	torch.distributed.barrier()
 	torch.distributed.broadcast_object_list(object_list, src=src)
 	return object_list
+
+def _z3_params_to_fetch(param_list):
+	return [
+		p for p in param_list
+		if hasattr(p, 'ds_id') and p.ds_status == ZeroParamStatus.NOT_AVAILABLE
+	]
+
+def save_zero_three_model(model, args, path):
+	os.makedirs(path, exist_ok=True)
+	WEIGHTS_NAME = "pytorch_model.bin"
+	output_model_file = os.path.join(path, WEIGHTS_NAME)
+	model_to_save = model.module if hasattr(model, 'module') else model
+	output_state_dict = {}
+	for k, v in model_to_save.named_parameters():
+		if hasattr(v, 'ds_id'):
+			with deepspeed.zero.GatheredParameters(_z3_params_to_fetch([v]),enabled=True):
+				v_p = v.data
+		else:
+			v_p = v
+		if args.global_rank == 0:
+			output_state_dict[k] = v_p
+	if args.global_rank == 0:
+		torch.save(output_state_dict, output_model_file)
+	del output_state_dict

@@ -30,7 +30,7 @@ def get_grpo_args():
 	parser.add_argument('--local_rank', type=int, default=-1)
 	parser.add_argument('--intra_doc_causal_mask', action='store_true')
 	parser.add_argument('--window_size', type=int, default=500)
-	parser.add_argument('--task_type', type=str, default=None, choices=['logic', 'math', 'vl_math'])
+	parser.add_argument('--task_type', type=str, default=None, choices=['logic', 'math', 'vl_math', 'agent_math'])
 	# grpo
 	parser.add_argument('--max_seq_len', type=int, default=2048)
 	parser.add_argument('--clip_range', type=float, default=0.2)
@@ -45,6 +45,12 @@ def get_grpo_args():
 	# vllm
 	parser.add_argument('--ngpus_for_vllm', type=int, default=1)
 	parser.add_argument('--eval_only', action='store_true')
+	# eval
+	parser.add_argument('--unbiased_pass_k_n', type=int, default=1)
+	parser.add_argument('--pass_k', type=str, default='1')
+	# tool_call
+	parser.add_argument('--max_tool_calls', type=int, default=6)
+	parser.add_argument('--max_tool_response_len', type=int, default=200)
 	# playout
 	# parser.add_argument('--per_device_playout_batch_size', type=int, default=4)
 	parser.add_argument('--per_device_rollout_batch_size', type=int, default=4)

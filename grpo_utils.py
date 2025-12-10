@@ -58,10 +58,13 @@ class GRPOBuffer(object):
 				self.empty_answer_count += 1
 
 	def add_for_text(self, group_token_ids, group_attention_mask, group_old_logps, 
-			group_ref_logps, group_response, gold_label, logits_to_keep, finished_list):
+			group_ref_logps, group_response, gold_label, logits_to_keep, finished_list, 
+			group_loss_mask=None):
 		advs, rewards, answers = self.cal_advs(group_response, gold_label)
 		self.all_token_ids += group_token_ids
 		self.all_attention_mask += group_attention_mask
+		if group_loss_mask is not None:
+			self.all_loss_mask += group_loss_mask
 		self.all_old_logps += group_old_logps
 		self.all_ref_logps += group_ref_logps
 		self.all_advs += advs
@@ -78,15 +81,22 @@ class GRPOBuffer(object):
 		for answer in answers:
 			if answer == '':
 				self.empty_answer_count += 1
+		if self.args.task_type == 'agent_math':
+			for response in group_response:
+				if '```python\n' in response and '\n```\n' in response:
+					self.has_tool_call += 1
+					self.tool_call_cnt += min(response.count('```python\n'), response.count('\n```\n'))
+					self.time_out_cnt += response.count('Exec code time out')
 
 	def print_rewards(self, group_response, gold_label, rewards, answers):
 		if self.args.debug and self.args.local_rank < 1:
 			for r, rw, answer in zip(group_response, rewards, answers):
-				print('*' * 20)
-				print(r)
-				print('gold_label: ', gold_label)
-				print('answer: ', answer)
-				print('rw:', rw)
+				if answer != '':
+					print('*' * 20)
+					print(r)
+					print('gold_label: ', gold_label)
+					print('answer: ', answer)
+					print('rw:', rw)
 				# print(self.all_token_ids)
 				# print(self.all_attention_mask)
 				# print(self.all_old_logps)
@@ -94,6 +104,7 @@ class GRPOBuffer(object):
 	def reset(self):
 		self.all_token_ids = []
 		self.all_attention_mask = []
+		self.all_loss_mask = []
 		self.all_position_ids = []
 		self.all_images = []
 		self.all_old_logps = []
@@ -110,6 +121,10 @@ class GRPOBuffer(object):
 		self.all_wrong_group_cnt = 0
 		self.empty_answer_count = 0
 		self.reward_std = 0
+		self.has_tool_call = 0
+		self.tool_call_cnt = 0
+		self.time_out_cnt = 0
+		self.has_bad_tool_call = 0
 
 	def get_stat(self):
 		pass_at_k = self.correct / self.total if self.total > 0 else 0
@@ -126,6 +141,10 @@ class GRPOBuffer(object):
 		all_correct_ratio = self.all_correct_group_cnt / self.total
 		all_wrong_ratio = self.all_wrong_group_cnt / self.total
 		avg_empty_answer_ratio = self.empty_answer_count / self.total / self.args.group_size
+		avg_tool_call_ratio = self.has_tool_call / self.total / self.args.group_size
+		avg_bad_tool_call_ratio = self.has_bad_tool_call / self.total / self.args.group_size
+		avg_tool_call_cnt = self.tool_call_cnt / (self.has_tool_call + 1e-6)
+		avg_time_out_cnt = self.time_out_cnt / (self.has_tool_call + 1e-6)
 		data_stats = {
 			'prompt_avg_len': torch.tensor(prompt_avg_len), 
 			'prompt_max_len': torch.tensor(prompt_max_len), 
@@ -140,8 +159,16 @@ class GRPOBuffer(object):
 			'avg_empty_answer_ratio': torch.tensor(avg_empty_answer_ratio),
 			'avg_correct_reward': torch.tensor(avg_correct_reward),
 			'avg_format_reward': torch.tensor(avg_format_reward),
-			'avg_reward_std': torch.tensor(avg_reward_std)
+			'avg_reward_std': torch.tensor(avg_reward_std),
 			}
+		if self.args.task_type == 'agent_math':
+			tool_call_stats = {
+				'avg_tool_call_ratio': torch.tensor(avg_tool_call_ratio),
+				'avg_bad_tool_call_ratio': torch.tensor(avg_bad_tool_call_ratio),
+				'avg_tool_call_cnt': torch.tensor(avg_tool_call_cnt),
+				'avg_time_out_cnt': torch.tensor(avg_time_out_cnt)
+			}
+			data_stats.update(tool_call_stats)
 		return data_stats
 
 	# def inter_shuffle(self, data, ids):
@@ -173,38 +200,37 @@ class GRPOBuffer(object):
 		self.all_advs = self.random_shuffle(self.all_advs, ids)
 		if len(self.all_images) > 0:
 			self.all_images = self.random_shuffle(self.all_images, ids)
+		if len(self.all_loss_mask) > 0:
+			self.all_loss_mask = self.random_shuffle(self.all_loss_mask, ids)
 
-	def get_all_batches(self, batch_size):
-		self.shuffle()
-		all_batches = []
-		# if self.args.local_rank < 1:
-		# 	print(len(self.all_token_ids), batch_size)
-		# 	print(len(self.all_pixel_values), len(self.all_image_grid_thw))
-		# TODO, fix this
-		# assert batch_size == self.args.group_size
-		assert len(self.all_token_ids) == len(self.all_attention_mask) == len(self.all_old_logps) == len(self.all_ref_logps) == len(self.all_advs)
-		if self.args.task_type == 'vl_math':
-			for i in range(len(self.all_token_ids) // batch_size):
-				all_batches.append({
-					'tensor_batch': (
-						torch.LongTensor(self.all_token_ids[i*batch_size:i*batch_size+batch_size]), 
-						torch.LongTensor(self.all_attention_mask[i*batch_size:i*batch_size+batch_size]), 
-						torch.FloatTensor(self.all_old_logps[i*batch_size:i*batch_size+batch_size]),
-						torch.FloatTensor(self.all_ref_logps[i*batch_size:i*batch_size+batch_size]),
-						torch.FloatTensor(self.all_advs[i*batch_size:i*batch_size+batch_size])
-						),
-					'non_tensor_batch': {'images': self.all_images[i*batch_size:i*batch_size+batch_size]}
-					})
-		else:
-			for i in range(len(self.all_token_ids) // batch_size):
-				all_batches.append((
-					torch.LongTensor(self.all_token_ids[i*batch_size:i*batch_size+batch_size]), 
-					torch.LongTensor(self.all_attention_mask[i*batch_size:i*batch_size+batch_size]), 
-					torch.FloatTensor(self.all_old_logps[i*batch_size:i*batch_size+batch_size]),
-					torch.FloatTensor(self.all_ref_logps[i*batch_size:i*batch_size+batch_size]),
-					torch.FloatTensor(self.all_advs[i*batch_size:i*batch_size+batch_size])
-					))
-		return all_batches
+	# def get_all_batches(self, batch_size):
+	# 	self.shuffle()
+	# 	all_batches = []
+	# 	# TODO, fix this
+	# 	# assert batch_size == self.args.group_size
+	# 	assert len(self.all_token_ids) == len(self.all_attention_mask) == len(self.all_old_logps) == len(self.all_ref_logps) == len(self.all_advs)
+	# 	if self.args.task_type == 'vl_math':
+	# 		for i in range(len(self.all_token_ids) // batch_size):
+	# 			all_batches.append({
+	# 				'tensor_batch': (
+	# 					torch.LongTensor(self.all_token_ids[i*batch_size:i*batch_size+batch_size]), 
+	# 					torch.LongTensor(self.all_attention_mask[i*batch_size:i*batch_size+batch_size]), 
+	# 					torch.FloatTensor(self.all_old_logps[i*batch_size:i*batch_size+batch_size]),
+	# 					torch.FloatTensor(self.all_ref_logps[i*batch_size:i*batch_size+batch_size]),
+	# 					torch.FloatTensor(self.all_advs[i*batch_size:i*batch_size+batch_size])
+	# 					),
+	# 				'non_tensor_batch': {'images': self.all_images[i*batch_size:i*batch_size+batch_size]}
+	# 				})
+	# 	else:
+	# 		for i in range(len(self.all_token_ids) // batch_size):
+	# 			all_batches.append((
+	# 				torch.LongTensor(self.all_token_ids[i*batch_size:i*batch_size+batch_size]), 
+	# 				torch.LongTensor(self.all_attention_mask[i*batch_size:i*batch_size+batch_size]), 
+	# 				torch.FloatTensor(self.all_old_logps[i*batch_size:i*batch_size+batch_size]),
+	# 				torch.FloatTensor(self.all_ref_logps[i*batch_size:i*batch_size+batch_size]),
+	# 				torch.FloatTensor(self.all_advs[i*batch_size:i*batch_size+batch_size])
+	# 				))
+	# 	return all_batches
 
 	def get_all_batches_v2(self, batch_size):
 		self.shuffle()
@@ -229,66 +255,79 @@ class GRPOBuffer(object):
 					})
 		else:
 			for i in range(len(self.all_token_ids) // batch_size):
-				all_batches.append({
-					'tensor_batch':(
-						torch.LongTensor(self.all_token_ids[i*batch_size:i*batch_size+batch_size]), 
-						torch.LongTensor(self.all_attention_mask[i*batch_size:i*batch_size+batch_size]), 
-						torch.FloatTensor(self.all_old_logps[i*batch_size:i*batch_size+batch_size]),
-						torch.FloatTensor(self.all_ref_logps[i*batch_size:i*batch_size+batch_size]),
-						torch.FloatTensor(self.all_advs[i*batch_size:i*batch_size+batch_size])
-						),
-					'non_tensor_batch': {'images': None}
-					})
+				if self.args.task_type == 'agent_math':
+					all_batches.append({
+						'tensor_batch':(
+							torch.LongTensor(self.all_token_ids[i*batch_size:i*batch_size+batch_size]), 
+							torch.LongTensor(self.all_attention_mask[i*batch_size:i*batch_size+batch_size]), 
+							torch.FloatTensor(self.all_old_logps[i*batch_size:i*batch_size+batch_size]),
+							torch.FloatTensor(self.all_ref_logps[i*batch_size:i*batch_size+batch_size]),
+							torch.FloatTensor(self.all_advs[i*batch_size:i*batch_size+batch_size]),
+							torch.LongTensor(self.all_loss_mask[i*batch_size:i*batch_size+batch_size])
+							),
+						'non_tensor_batch': {'images': None}
+						})
+				else:
+					all_batches.append({
+						'tensor_batch':(
+							torch.LongTensor(self.all_token_ids[i*batch_size:i*batch_size+batch_size]), 
+							torch.LongTensor(self.all_attention_mask[i*batch_size:i*batch_size+batch_size]), 
+							torch.FloatTensor(self.all_old_logps[i*batch_size:i*batch_size+batch_size]),
+							torch.FloatTensor(self.all_ref_logps[i*batch_size:i*batch_size+batch_size]),
+							torch.FloatTensor(self.all_advs[i*batch_size:i*batch_size+batch_size])
+							),
+						'non_tensor_batch': {'images': None}
+						})
 		return all_batches
 
-	def cal_rewards_for_logic(self, response, gold_label):
-		if is_equal(response, gold_label, 'logic'):
-			correct, reward = True, 1
-		else:
-			correct, reward = False, 0
-		format_reward = self.get_format_reward(response)
-		self.correct_reward += reward
-		self.format_reward += format_reward
-		return reward + format_reward, correct
-
-	def cal_rewards_for_math(self, response, gold_label):
-		if is_equal(response, gold_label):
+	def cal_rewards(self, response, gold_label):
+		answer = extract_answer_from_model_response(response, self.args.task_type)
+		format_flag = self.get_format_flag(response)
+		if is_equal(answer, gold_label, self.args.task_type):
 			correct = True
-			reward = 1
 		else:
-			correct, reward = False, 0
-		format_reward = self.get_format_reward(response)
-		self.correct_reward += reward
-		self.format_reward += format_reward
-		return reward + format_reward, correct
+			correct = False
+		if format_flag and correct:
+			self.correct_reward += 1
+		if format_flag:
+			self.format_reward += 1
+		if format_flag and correct:
+			final_reward = 1.1
+		elif format_flag:
+			final_reward = 0.0
+		else:
+			final_reward = -1.0
+		return answer, final_reward, correct
 
-	def get_format_reward(self, response):
-		format_reward = 0.0
-		if '<think>' in response and '</think>' in response and '<answer>' in response and '</answer>' in response:
-			if response.count('<think>') == 1 and response.count('</think>') == 1 and response.count('<answer>') == 1 and response.count('</answer>') == 1:
-				think_start = response.index('<think>')
-				think_end = response.index('</think>')
-				answer_start = response.index('<answer>')
-				answer_end = response.index('</answer>')
-				if think_start < think_end < answer_start < answer_end:
-					format_reward = 0.1
-		return format_reward
+	def get_format_flag(self, response):
+		format_flag = False
+		if self.args.task_type == 'agent_math':
+			# if '<answer>' in response and '</answer>' in response and '<code>\n```python' in response and '```\n</code>' in response:
+			# 	if response.count('<code>\n```python') == response.count('```\n</code>') and response.count('<answer>') == 1 and response.count('</answer>') == 1:
+			# 		if response.replace('</code><interpreter>', '').count('<interpreter>') == 0 and response.count('<interpreter>') == response.count('</interpreter>'):
+			# 			format_flag = True
+			if '<answer>' in response and '</answer>' in response and '```python\n' in response and '\n```\n' in response:
+				if response.count('<answer>') == 1 and response.count('</answer>') == 1:
+					if response.count('<tool_response>') == response.count('</tool_response>'):
+						format_flag = True
+		else:
+			if '<think>' in response and '</think>' in response and '<answer>' in response and '</answer>' in response:
+				if response.count('<think>') == 1 and response.count('</think>') == 1 and response.count('<answer>') == 1 and response.count('</answer>') == 1:
+					think_start = response.index('<think>')
+					think_end = response.index('</think>')
+					answer_start = response.index('<answer>')
+					answer_end = response.index('</answer>')
+					if think_start < think_end < answer_start < answer_end:
+						format_flag = True
+		return format_flag
 
 	def cal_advs(self, group_response, gold_label):
 		rewards, all_correct, all_answers = [], [], []
 		for r in group_response:
-			if self.args.task_type == 'logic':
-				reward, correct = self.cal_rewards_for_logic(r, gold_label)
-			elif self.args.task_type == 'vl_math':
-				reward, correct = self.cal_rewards_for_math(r, gold_label)
-			elif self.args.task_type == 'math':
-				reward, correct = self.cal_rewards_for_math(r, gold_label)
+			answer, reward, correct = self.cal_rewards(r, gold_label)
 			rewards.append(reward)
 			all_correct.append(correct)
-			if self.args.task_type == 'logic':
-				all_answers.append(extract_answer_from_model_response(r, 'logic'))
-			else:
-				all_answers.append(extract_answer_from_model_response(r))
+			all_answers.append(answer)
 		rewards = torch.tensor(rewards)
 		std = torch.std(rewards)
 		# len_rewards = torch.tensor(self.get_len_reward(group_response, all_correct))
@@ -311,7 +350,7 @@ class GRPOBuffer(object):
 		if any(all_correct):
 			self.correct += 1
 		self.reward_std += std.item()
-		return advs, rewards, all_answers
+		return advs.tolist(), rewards, all_answers
 
 def print_rank0(args, x):
 	if args.local_rank < 1:
@@ -324,7 +363,9 @@ def get_ratio_stat(args, ratio, loss_mask):
 	return clipped / (loss_mask.sum() + 1e-6)
 
 def caculate_grpo_loss(args, logps, old_logps, ref_logps, advs, loss_mask):
-	advs = advs.unsqueeze(-1)
+	if advs.ndim == 1:
+		advs = advs.unsqueeze(-1)
+	print(advs)
 	if args.algo == 'stable_reinforce':
 		logp_diff = torch.clamp(logps - old_logps, np.log(1e-3), np.log(1e3))
 	else:

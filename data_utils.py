@@ -26,20 +26,46 @@ def to_json(data, fout):
 	with open(fout, 'w', encoding='utf8') as f:
 		json.dump(data, f, ensure_ascii=False, indent=4)	
 
+def is_number(text):
+	for c in text:
+		if c not in '0123456789.-':
+			return False
+	return True
+
+def locate_in_string(string, sub_string):
+	index = []
+	for i in range(len(string)):
+		if string[i:i+len(sub_string)] == sub_string:
+			index.append(i)
+	return index
+
 def extract_last_box(response):
-	box = re.findall('boxed{[0-9a-zA-Z\.\+\\\{\},°/\s^-]+}', response)
-	if box:
-		return box[0][6:-1]
+	index = locate_in_string(response, 'boxed')
+	if len(index) > 0:
+		box = re.findall('boxed{[0-9a-zA-Z\.\+\\\{\}\(\)\[\],°/\s!%_^=-]+}', response[index[-1]:])
+		if box:
+			if '=' in box[-1]:
+				return box[-1][6:-1].split('=')[-1]
+			return box[-1][6:-1]
 	return ''
 
-def extract_answer_from_model_response(response, task_type='math'):
-	if task_type == 'math':
-		return extract_last_box(response)
+def extract_from_answer_tags(response):
 	if '<answer>' in response and '</answer>' in response:
 		answer = response[response.index('<answer>')+8:response.index('</answer>')]
 		return answer
 	else:
 		return ''
+
+def extract_answer_from_model_response(response, task_type):
+	# wo <answer> and </answer> tags
+	if task_type in ['math', 'vl_math']:
+		return extract_last_box(response)
+	else:
+		# w <answer> and </answer> tags
+		answer = extract_from_answer_tags(response)
+		if task_type == 'agent_math':
+			return extract_last_box(answer)
+		return answer
 
 def parse_model_answer_for_logic(answer_text, expected_names):
 	pred_dict = {}
@@ -64,7 +90,7 @@ def number_equal(a, b):
 	if a == b:
 		return True
 	try:
-		if abs(eval(a) - eval(b)) < 0.1:
+		if abs(eval(a) - eval(b)) < 0.01:
 			return True
 	except:
 		return False
@@ -74,7 +100,7 @@ def latex_norm(answer):
 		answer = answer[:-1]
 	answer = answer.replace('\\left', '').replace('\\right', '')
 	answer = answer.replace('－', '-').replace('∶', ':').replace('，', ',')
-	answer = answer.replace('$', '').strip().replace(' ', '')
+	answer = answer.replace('\\$', '').replace('$', '').strip().replace(' ', '')
 	# number{x} ==> x
 	number = re.findall('number{[0-9\.]+}', answer)
 	if number:
@@ -99,13 +125,13 @@ def latex_norm(answer):
 	# pi ==> π
 	answer = answer.replace('\\pi', 'π')
 	# a:b ==> a/b
-	answer = answer.replace(':', '/')
+	answer = answer.replace(':', '/').replace('÷', '/')
 	# pm ==> ±
 	answer = answer.replace('\\pm', '±')
 	# le ==> ≤
-	answer = answer.replace('\\leqslant', '≤').replace('\\le', '≤')
+	answer = answer.replace('\\leqslant', '≤').replace('\\leq', '≤')
 	# ge ==> ≥
-	answer = answer.replace('\\ge', '≥')
+	answer = answer.replace('\\geqslant', '≥').replace('\\geq', '≥')
 	# %
 	answer = answer.replace('\\%', '%')
 	# angel ==> ∠
@@ -114,6 +140,9 @@ def latex_norm(answer):
 	answer = answer.replace('\\parallel', '||')
 	# perp ==> ⊥
 	answer = answer.replace('\\perp', '⊥')
+	# \left, \right --> ''
+	answer = answer.replace('\\left', '')
+	answer = answer.replace('\\rigth', '')
 	# sqrt{x} ==> √
 	# sqrt{x} ==> (x ** 0.5) 
 	sqrt = re.findall('sqrt{[0-9π\.]+}', answer)
@@ -178,9 +207,8 @@ def safe_load_image(img_path):
 		img.load()
 	return img
 
-def is_equal(response, label, task_type='math'):
-	if task_type == 'math':
-		pred = extract_answer_from_model_response(response)
+def is_equal(pred, label, task_type):
+	if task_type in ['math', 'vl_math', 'agent_math']:
 		pred = pred.replace(' ', '')
 		label = label.replace(' ', '')
 		if pred == label:
@@ -189,7 +217,6 @@ def is_equal(response, label, task_type='math'):
 			return True
 		return False
 	elif task_type == 'logic':
-		pred = extract_answer_from_model_response(response, task_type='logic')
 		gold_dict = json.loads(label)
 		pred_dict = parse_model_answer_for_logic(pred, list(gold_dict.keys()))
 		if pred_dict and gold_dict == pred_dict:

@@ -23,6 +23,31 @@ My implementations of RL algorithms like GRPO/GSPO with minimal code.
 # Requirements
 	pip install -r requirements
 
+# Train on dapo_math
+	bash scripts/run_agent_math.sh
+
+## Dataset
+https://huggingface.co/datasets/BytedTsinghua-SIA/DAPO-Math-17k
+
+## Results on math benchmarks(metric:avg@32/pass@32)
+|                  Model                |   MATH500   |  AIME24    |    AIME25     | HMMT Feb.25| BeyondAIME |        AVG        |
+| -----------------------------  | -------------   | -----------  |  ------------  |  --------------  |   ------------   |   ------------   |
+| Qwen2.5-7B-Instruct + sft |  0.619/0.884 |  0.105/0.5  | 0.065/0.4     |  0.047/0.367   |   0.028/0.25   |   0.173/0.48   |
+| Qwen2.5-7B-Instruct + rl   |  0.718/0.91   |  0.261/0.6  | 0.227/0.533 |  0.125/0.367   |   0.068/0.33   |   0.28/0.548   |
+| Qwen3-4B-Instruct + sft    |  0.777/0.916 |  0.268/0.7  | 0.202/0.333 |  0.130/0.5       |   0.109/0.44   |   0.297/0.578 |
+| Qwen3-4B-Instruct + rl      |  0.843/0.928 |  0.442/0.8  | 0.385/0.733 |  0.239/0.6       |   0.209/0.52   |   0.424/0.716 |
+
+## Training curves:
+### train_curves_of_qwen2.5_7b_instruct_on_dapo
+![train_curves_of_qwen2.5_7b_instruct_on_dapo](/assets/images/train_curves_of_qwen2.5_7b_instruct_on_dapo.png)
+
+### train_curves_of_qwen3_4b_instruct_on_dapo
+![train_curves_of_qwen3_4b_instruct_on_dapo](/assets/images/train_curves_of_qwen3_4b_instruct_on_dapo.png)
+
+### Reasoning Examples
+![agent_math_response_aime_0](/assets/images/agent_math_response_aime_0.png)
+![agent_math_response_aime_1](/assets/images/agent_math_response_aime_1.png)
+
 # Train on logic
 	bash scripts/run_logic.sh
 
@@ -73,11 +98,14 @@ https://huggingface.co/datasets/hiyouga/geometry3k
 ![train_curves_of_qwen2.5_7b_vl_instruct_on_geometry3k](/assets/images/train_curves_of_qwen2.5_7b_vl_instruct_on_geometry3k.png)
 
 # TODO
-+ train on math
++ <del>train on math</del>
 + <del>train with Dr-GRPO/GSPO/KL-Conv/StableReinforce algos</del>
 + support dynamic sampling from dapo
 + support ppo/reinforce++/RLOO
 + <del>support vision language models</del>
 + support Retrieval-Augmented Reasoning
-+ support agent training
++ <del>support agent training</del>
 + support code eval
++ support vllm infer parallelism(dp2, tp4)
++ add ulysses sequence parallelism
++ support padding free training
